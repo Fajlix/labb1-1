@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="99eb2856-575f-4db1-b273-6dc64c38d0c9" name="Default Changelist" comment="" />
+    <list default="true" id="99eb2856-575f-4db1-b273-6dc64c38d0c9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Test/GenericCarTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/Saab95Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/TestCar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/Volvo240Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/labb1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/labb1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GenericCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenericCar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Saab95.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Saab95.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Volvo240.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Volvo240.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,20 +23,36 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Labb1" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1TRNEdsO1zHzOao7INGdpwtwRRL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\java\labb1" />
     </key>
@@ -42,6 +69,51 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="JUnit.Saab95Test">
+    <configuration name="All in labb1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="labb1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GenericCarTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="labb1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="GenericCarTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Saab95Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="labb1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Saab95Test" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Volvo240Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="labb1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Volvo240Test" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.Saab95Test" />
+        <item itemvalue="JUnit.All in labb1" />
+        <item itemvalue="JUnit.GenericCarTest" />
+        <item itemvalue="JUnit.Volvo240Test" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -54,5 +126,23 @@
       <updated>1573418837282</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/Labb1" />
+    </ignored-roots>
   </component>
 </project>

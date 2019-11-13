@@ -8,13 +8,17 @@ public class Saab95 extends GenericCar{
     /**
      * Says if the turbo is on or off
      */
-    public boolean turboOn; // Says if the turbo is on or off
+    private boolean turboOn; // Says if the turbo is on or off
 
     /**
      * creates a new Saab 95 car
      */
     public Saab95(){
         super(2, Color.red, 125, "Saab95");
+    }
+
+    public boolean isTurboOn() {
+        return turboOn;
     }
 
     /**
@@ -43,21 +47,4 @@ public class Saab95 extends GenericCar{
         return getEnginePower() * 0.01 * turbo;
     }
 
-    /**
-     * increments the speed of a saab95
-     * @param amount the amount which the car should change speed with
-     */
-
-    public void incrementSpeed(double amount){
-        setCurrentSpeed(getCurrentSpeed() + speedFactor() * amount);
-    }
-
-    /**
-     * decrements the speed of a saab95
-     * @param amount the amount which the car should change speed with
-     */
-
-    public void decrementSpeed(double amount){
-        setCurrentSpeed(getCurrentSpeed() - speedFactor() * amount);
-    }
 }

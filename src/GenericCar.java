@@ -4,7 +4,7 @@ import java.util.Vector;
 /**
  * GenericCar class used as a base class for cars
  */
-public abstract class GenericCar implements ChangeSpeed, Moveable{
+public abstract class GenericCar implements Moveable{
 
 
     private final int nrDoors; // Number of doors on the car
@@ -83,22 +83,6 @@ public abstract class GenericCar implements ChangeSpeed, Moveable{
     }
 
     /**
-     * sets current speed of a car
-     * @param currentSpeed the new current speed of a car
-     */
-    public void setCurrentSpeed(double currentSpeed) {
-        if (currentSpeed > enginePower)
-        {
-            setCurrentSpeed(enginePower);
-        }
-        else if (currentSpeed < 0)
-        {
-            setCurrentSpeed(0);
-        }
-        this.currentSpeed = currentSpeed;
-    }
-
-    /**
      * get the color of a car
      * @return returns the color of a car
      */
@@ -126,6 +110,37 @@ public abstract class GenericCar implements ChangeSpeed, Moveable{
      */
     public void stopEngine(){
         currentSpeed = 0;
+    }
+    /**
+     * increments the speed of a Car
+     * @param amount the amount which the car should change speed with
+     */
+
+    /**
+     * the speed factor for a object
+     * @return returns the speed factor for a car
+     */
+    protected abstract double speedFactor();
+
+    private void incrementSpeed(double amount){
+        currentSpeed = Math.min(currentSpeed + speedFactor() * amount,getEnginePower());
+    }
+
+    /**
+     * decrements the speed of a Car
+     * @param amount the amount which the car should change speed with
+     */
+
+    private void decrementSpeed(double amount){
+        currentSpeed = Math.max(currentSpeed - speedFactor() * amount,0);
+    }
+
+    public double getX() {
+        return x;
+    }
+
+    public double getY() {
+        return y;
     }
 
     /**
