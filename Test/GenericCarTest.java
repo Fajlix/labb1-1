@@ -5,6 +5,7 @@ import java.awt.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 class GenericCarTest {
+    final double THRESHOLD = 0.00001;
 
     @Test
     void move() {
@@ -19,14 +20,14 @@ class GenericCarTest {
     void turnLeft() {
         TestCar testCar = new TestCar();
         testCar.turnLeft();
-        //TODO Asset? med private variable
+        assertTrue(testCar.getDirection() - Math.PI/6 <= THRESHOLD);
     }
 
     @Test
     void turnRight() {
         TestCar testCar = new TestCar();
         testCar.turnRight();
-        //TODO Asset? med private variable
+        assertTrue(testCar.getDirection() + Math.PI/6 < THRESHOLD);
     }
 
     @Test
@@ -85,7 +86,6 @@ class GenericCarTest {
 
     @Test
     void brake() {
-        final double THRESHOLD = 0.00001;
         TestCar testCar = new TestCar();
         testCar.startEngine();
         testCar.gas(1);

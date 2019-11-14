@@ -2,73 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99eb2856-575f-4db1-b273-6dc64c38d0c9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/ChangeSpeed.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/GenericCar.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/Moveable.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/Saab95.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/Volvo240.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/allclasses-index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/allpackages-index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/constant-values.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/deprecated-list.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/element-list" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/help-doc.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/index-files/index-1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/index-files/index-10.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/index-files/index-11.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/index-files/index-12.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/index-files/index-13.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/index-files/index-2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/index-files/index-3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/index-files/index-4.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/index-files/index-5.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/index-files/index-6.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/index-files/index-7.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/index-files/index-8.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/index-files/index-9.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/jquery/external/jquery/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/jquery/images/ui-bg_glass_55_fbf9ee_1x400.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/jquery/images/ui-bg_glass_65_dadada_1x400.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/jquery/images/ui-bg_glass_75_dadada_1x400.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/jquery/images/ui-bg_glass_75_e6e6e6_1x400.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/jquery/images/ui-bg_glass_95_fef1ec_1x400.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/jquery/images/ui-bg_highlight-soft_75_cccccc_1x100.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/jquery/images/ui-icons_222222_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/jquery/images/ui-icons_2e83ff_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/jquery/images/ui-icons_454545_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/jquery/images/ui-icons_888888_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/jquery/images/ui-icons_cd0a0a_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/jquery/jquery-3.3.1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/jquery/jquery-migrate-3.0.1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/jquery/jquery-ui.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/jquery/jquery-ui.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/jquery/jquery-ui.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/jquery/jquery-ui.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/jquery/jquery-ui.structure.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/jquery/jquery-ui.structure.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/jquery/jszip-utils/dist/jszip-utils-ie.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/jquery/jszip-utils/dist/jszip-utils-ie.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/jquery/jszip-utils/dist/jszip-utils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/jquery/jszip-utils/dist/jszip-utils.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/jquery/jszip/dist/jszip.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/jquery/jszip/dist/jszip.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/member-search-index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/member-search-index.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/overview-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/package-search-index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/package-search-index.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/resources/glass.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/resources/x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/search.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/stylesheet.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/type-search-index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/type-search-index.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/GenericCarTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/GenericCarTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GenericCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenericCar.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -127,7 +61,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Saab95Test">
+  <component name="RunManager" selected="JUnit.All in labb1">
     <configuration name="All in labb1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="labb1" />
       <option name="PACKAGE_NAME" value="" />
@@ -165,8 +99,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Saab95Test" />
         <item itemvalue="JUnit.All in labb1" />
+        <item itemvalue="JUnit.Saab95Test" />
         <item itemvalue="JUnit.GenericCarTest" />
         <item itemvalue="JUnit.Volvo240Test" />
       </list>

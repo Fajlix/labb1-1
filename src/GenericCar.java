@@ -35,6 +35,7 @@ public abstract class GenericCar implements Moveable{
         direction = 0;
 
     }
+    
 
     /**
      *  Moves car with current speed in a direction
@@ -64,6 +65,10 @@ public abstract class GenericCar implements Moveable{
      */
     public int getNrDoors() {
         return nrDoors;
+    }
+
+    public double getDirection() {
+        return direction;
     }
 
     /**
