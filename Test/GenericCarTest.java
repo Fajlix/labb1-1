@@ -5,7 +5,7 @@ import java.awt.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 class GenericCarTest {
-    final double THRESHOLD = 0.00001;
+    final double THRESHOLD = 0.0000001;
 
     @Test
     void move() {
