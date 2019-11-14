@@ -33,9 +33,11 @@ public abstract class GenericCar implements Moveable{
         x = 0;
         y = 0;
         direction = 0;
-
     }
-    
+
+    public double getDirection() {
+        return direction;
+    }
 
     /**
      *  Moves car with current speed in a direction
@@ -65,10 +67,6 @@ public abstract class GenericCar implements Moveable{
      */
     public int getNrDoors() {
         return nrDoors;
-    }
-
-    public double getDirection() {
-        return direction;
     }
 
     /**
@@ -116,10 +114,6 @@ public abstract class GenericCar implements Moveable{
     public void stopEngine(){
         currentSpeed = 0;
     }
-    /**
-     * increments the speed of a Car
-     * @param amount the amount which the car should change speed with
-     */
 
     /**
      * the speed factor for a object
@@ -127,6 +121,10 @@ public abstract class GenericCar implements Moveable{
      */
     protected abstract double speedFactor();
 
+    /**
+     * increments the speed of a Car
+     * @param amount the amount which the car should change speed with
+     */
     private void incrementSpeed(double amount){
         currentSpeed = Math.min(currentSpeed + speedFactor() * amount,getEnginePower());
     }
@@ -135,7 +133,6 @@ public abstract class GenericCar implements Moveable{
      * decrements the speed of a Car
      * @param amount the amount which the car should change speed with
      */
-
     private void decrementSpeed(double amount){
         currentSpeed = Math.max(currentSpeed - speedFactor() * amount,0);
     }
