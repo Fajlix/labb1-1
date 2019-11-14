@@ -135,20 +135,28 @@ public abstract class GenericCar implements Moveable{
         currentSpeed = Math.max(currentSpeed - speedFactor() * amount,0);
     }
 
+    /***
+     * gets current x pos for car
+     * @return returns a cars x
+     */
     public double getX() {
         return x;
     }
+
+    /***
+     * gets current y pos for car
+     * @return returns a cars y
+     */
 
     public double getY() {
         return y;
     }
 
     /**
-     * gas the car
+     * accelerates cars current speed
      * @param amount the amount which the car should change speed with
      */
 
-    // TODO fix this method according to lab pm
     public void gas(double amount){
         if (amount >= 0 && amount <= 1) {
             incrementSpeed(amount);
@@ -156,11 +164,10 @@ public abstract class GenericCar implements Moveable{
     }
 
     /**
-     * brakes the car
+     * decelerates cars current speed
      * @param amount the amount which the car should change speed with
      */
 
-    // TODO fix this method according to lab pm
     public void brake(double amount){
         if (amount >= 0 && amount <= 1) {
             decrementSpeed(amount);
