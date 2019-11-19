@@ -2,10 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99eb2856-575f-4db1-b273-6dc64c38d0c9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Scania.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/GenericCarTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/GenericCarTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doc/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doc/overview-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Saab95Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Saab95Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/labb1/GenericCar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/labb1/GenericCar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/labb1/Moveable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/labb1/Saab95Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/labb1/Saab95Test.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GenericCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenericCar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Moveable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Movable.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,12 +33,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1TRNEdsO1zHzOao7INGdpwtwRRL" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -63,7 +73,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in labb1">
+  <component name="RunManager" selected="Application.Test">
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test" />
+      <module name="labb1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="All in labb1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="labb1" />
       <option name="PACKAGE_NAME" value="" />
@@ -101,6 +118,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test" />
         <item itemvalue="JUnit.All in labb1" />
         <item itemvalue="JUnit.Saab95Test" />
         <item itemvalue="JUnit.GenericCarTest" />

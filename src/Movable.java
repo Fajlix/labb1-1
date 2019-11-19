@@ -1,4 +1,4 @@
-public interface Moveable {
+public interface Movable {
 
     /**
      * Changes position of a car

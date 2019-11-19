@@ -6,24 +6,24 @@ class Saab95Test {
 
     @Test
     void setTurboOn() {
-        Saab95 testcar = new Saab95();
-        testcar.setTurboOn();
-        assertTrue(testcar.isTurboOn() == true);
+        Saab95 testCar = new Saab95();
+        testCar.setTurboOn();
+        assertTrue(testCar.isTurboOn() == true);
     }
 
     @Test
     void setTurboOff() {
-        Saab95 testcar = new Saab95();
-        testcar.setTurboOff();
-        assertTrue(testcar.isTurboOn() == false);
+        Saab95 testCar = new Saab95();
+        testCar.setTurboOff();
+        assertTrue(testCar.isTurboOn() == false);
     }
 
     @Test
     void speedFactor() {
-        Saab95 testcar = new Saab95();
-        testcar.setTurboOff();
-        assertTrue(testcar.speedFactor() == 1.25);
-        testcar.setTurboOn();
-        assertTrue(testcar.speedFactor() == 1.625);
+        Saab95 testCar = new Saab95();
+        testCar.setTurboOff();
+        assertTrue(testCar.speedFactor() == 1.25);
+        testCar.setTurboOn();
+        assertTrue(testCar.speedFactor() == 1.625);
     }
 }

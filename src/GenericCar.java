@@ -4,7 +4,7 @@ import java.util.Vector;
 /**
  * GenericCar class used as a base class for cars
  */
-public abstract class GenericCar implements Moveable{
+public abstract class GenericCar implements Movable{
 
 
     private final int nrDoors; // Number of doors on the car
