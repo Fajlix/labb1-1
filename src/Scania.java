@@ -5,7 +5,7 @@ public class Scania extends GenericCar{
     final double THRESHOLD = 0.01;
 
     public Scania() {
-        super(2, Color.black, 220, "Scania");
+        super(2, Color.black, 220, "Scania", 11);
     }
 
     @Override

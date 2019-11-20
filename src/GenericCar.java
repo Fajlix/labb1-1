@@ -6,7 +6,7 @@ import java.util.Vector;
  */
 public abstract class GenericCar implements Movable{
 
-
+    public final int size;
     private final int nrDoors; // Number of doors on the car
     private final double enginePower; // Engine power of the car
     private Color color; // Color of the car
@@ -24,15 +24,16 @@ public abstract class GenericCar implements Movable{
      * @param modelName The model name of a car
      */
 
-    public GenericCar(int nrDoors, Color color, double enginePower, String modelName) {
+    public GenericCar(int nrDoors, Color color, double enginePower, String modelName, int size) {
         this.nrDoors = nrDoors;
         this.color = color;
         this.enginePower = enginePower;
         this.modelName = modelName;
-        stopEngine();
+        this.size = size;
         x = 0;
         y = 0;
         direction = 0;
+        stopEngine();
     }
 
     public double getDirection() {
