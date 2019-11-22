@@ -10,6 +10,7 @@ public class CarTransport extends GenericCar {
     private Deque<GenericCar> carsList = new ArrayDeque<>();
     private final int MAX_CARS = 5;
     private final int MAX_SIZE = 8;
+    public static final int MAX_DISTANCE = 5;
     public CarTransport() {
         super(2,Color.black,300,"CarTransport", 20);
     }
@@ -17,6 +18,10 @@ public class CarTransport extends GenericCar {
     @Override
     protected double speedFactor() {
         return getEnginePower() * 0.01;
+    }
+
+    public FlatbedPos getFlatbedPos() {
+        return flatbedPos;
     }
 
     public void liftFlatbed () {
@@ -28,13 +33,15 @@ public class CarTransport extends GenericCar {
             flatbedPos = FlatbedPos.DOWN;
     }
     public void addCar (GenericCar car) {
-        if (carsList.size() < MAX_CARS && car.size < MAX_SIZE && car.getClass() != this.getClass() &&
-        flatbedPos == FlatbedPos.DOWN)
+        if (carsList.size() < MAX_CARS && car.getSize() < MAX_SIZE && car.getClass() != this.getClass() &&
+        flatbedPos == FlatbedPos.DOWN && getDistance(car) <= MAX_DISTANCE)
             carsList.push(car);
     }
     public GenericCar removeNextCar () {
-        if (!carsList.isEmpty())
+        if (!carsList.isEmpty() && flatbedPos== FlatbedPos.DOWN) {
+            carsList.peek().removeFromTransport(this);
             return carsList.pop();
+        }
         else
             return null;
     }
@@ -46,6 +53,9 @@ public class CarTransport extends GenericCar {
 
     public String getCarsListString() {
         return carsList.toString();
+    }
+    private double getDistance (GenericCar car){
+        return Math.sqrt(Math.pow(getX() - car.getX(), 2) + Math.pow(getY() - car.getY(), 2));
     }
 }
 

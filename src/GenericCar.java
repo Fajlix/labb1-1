@@ -6,7 +6,7 @@ import java.util.Vector;
  */
 public abstract class GenericCar implements Movable{
 
-    public final int size;
+    private int size;
     private final int nrDoors; // Number of doors on the car
     private final double enginePower; // Engine power of the car
     private Color color; // Color of the car
@@ -15,6 +15,7 @@ public abstract class GenericCar implements Movable{
     private double x; // Current x coordinate
     private double y; // Current y Coordinate
     private double direction; // Current direction
+    private CarTransport carTransport;
 
     /**
      * base constructor for a car
@@ -44,8 +45,15 @@ public abstract class GenericCar implements Movable{
      *  Moves car with current speed in a direction
      */
     public void move(){
-        x += currentSpeed * Math.cos(direction);
-        y += currentSpeed * Math.sin(direction);
+        if (carTransport != null)
+        {
+            x = carTransport.getX();
+            y = carTransport.getY();
+        }
+        else {
+            x += currentSpeed * Math.cos(direction);
+            y += currentSpeed * Math.sin(direction);
+        }
     }
 
     /**
@@ -94,6 +102,10 @@ public abstract class GenericCar implements Movable{
         return color;
     }
 
+    public int getSize() {
+        return size;
+    }
+
     /**
      * sets color of a car
      * @param color the new color of the car
@@ -121,6 +133,13 @@ public abstract class GenericCar implements Movable{
      * @return returns the speed factor for a car
      */
     protected abstract double speedFactor();
+
+    public void removeFromTransport (CarTransport carTransport) {
+        if (this.carTransport == carTransport) {
+            x += CarTransport.MAX_DISTANCE;
+            this.carTransport = null;
+        }
+    }
 
     /**
      * increments the speed of a Car
@@ -175,5 +194,9 @@ public abstract class GenericCar implements Movable{
         if (amount >= 0 && amount <= 1) {
             decrementSpeed(amount);
         }
+    }
+
+    public void setCarTransport(CarTransport carTransport) {
+        this.carTransport = carTransport;
     }
 }
