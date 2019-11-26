@@ -37,6 +37,7 @@ public abstract class GenericCar implements Movable{
         stopEngine();
     }
 
+
     public double getDirection() {
         return direction;
     }
@@ -146,7 +147,8 @@ public abstract class GenericCar implements Movable{
      * @param amount the amount which the car should change speed with
      */
     private void incrementSpeed(double amount){
-        currentSpeed = Math.min(currentSpeed + speedFactor() * amount,getEnginePower());
+        if (carTransport == null)
+            currentSpeed = Math.min(currentSpeed + speedFactor() * amount,getEnginePower());
     }
 
     /**
@@ -154,7 +156,8 @@ public abstract class GenericCar implements Movable{
      * @param amount the amount which the car should change speed with
      */
     private void decrementSpeed(double amount){
-        currentSpeed = Math.max(currentSpeed - speedFactor() * amount,0);
+        if (carTransport == null)
+            currentSpeed = Math.max(currentSpeed - speedFactor() * amount,0);
     }
 
     /***
@@ -195,6 +198,11 @@ public abstract class GenericCar implements Movable{
             decrementSpeed(amount);
         }
     }
+
+    /**
+     * set "parent carTransport"
+     * @param carTransport a carTransport
+     */
 
     public void setCarTransport(CarTransport carTransport) {
         this.carTransport = carTransport;

@@ -15,7 +15,7 @@ class GenericCarTest {
         assertTrue(testCar.getX() == 1);
         assertTrue(testCar.getY() == 0);
     }
-    
+
     @Test
     void turnLeft() {
         TestCar testCar = new TestCar();

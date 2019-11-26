@@ -1,17 +1,17 @@
 public interface Movable {
 
     /**
-     * Changes position of a car
+     * Changes position of a object
      */
     void move();
 
     /**
-     * turns a car left
+     * turns a object left
      */
     void turnLeft();
 
     /**
-     * turns a car right
+     * turns a object right
      */
     void turnRight();
 }
