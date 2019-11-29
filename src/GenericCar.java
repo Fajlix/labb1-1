@@ -1,4 +1,5 @@
 import java.awt.*;
+import java.nio.channels.Pipe;
 import java.util.Vector;
 
 /**
@@ -17,6 +18,7 @@ public abstract class GenericCar implements Movable{
     private double direction; // Current direction
     private CarTransport carTransport;
 
+
     /**
      * base constructor for a car
      * @param nrDoors Number of doors on a car
@@ -33,7 +35,7 @@ public abstract class GenericCar implements Movable{
         this.size = size;
         x = 0;
         y = 0;
-        direction = 0;
+        direction = 2 * Math.PI;
         stopEngine();
     }
 
@@ -56,6 +58,16 @@ public abstract class GenericCar implements Movable{
             y += currentSpeed * Math.sin(direction);
         }
     }
+    public void checkCollision(int xMax, int yMax) {
+        if (x > xMax)
+            x = xMax;
+        else if (x < 0)
+            x = 0;
+        if (y > yMax)
+            y = yMax;
+        else if (y < 0)
+            y = 0;
+    }
 
     /**
      * turns Car left
@@ -70,6 +82,12 @@ public abstract class GenericCar implements Movable{
     public void turnRight(){
         direction -= Math.PI/6;
     }
+
+    public void turnAround() {
+        if (currentSpeed == 0)
+            direction += Math.PI;
+    }
+
 
     /**
      * get the number of doors on a car
