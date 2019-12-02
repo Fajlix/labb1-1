@@ -1,4 +1,7 @@
+import javax.imageio.ImageIO;
 import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.io.IOException;
 import java.nio.channels.Pipe;
 import java.util.Vector;
 
@@ -17,6 +20,7 @@ public abstract class GenericCar implements Movable{
     private double y; // Current y Coordinate
     private double direction; // Current direction
     private CarTransport carTransport;
+    private BufferedImage image;
 
 
     /**
@@ -27,6 +31,23 @@ public abstract class GenericCar implements Movable{
      * @param modelName The model name of a car
      */
 
+    public GenericCar(int nrDoors, Color color, double enginePower, String modelName, int size, String image) {
+        this.nrDoors = nrDoors;
+        this.color = color;
+        this.enginePower = enginePower;
+        this.modelName = modelName;
+        this.size = size;
+        x = 0;
+        y = 0;
+        direction = 2 * Math.PI;
+        stopEngine();
+        try {
+            this.image = ImageIO.read(DrawPanel.class.getResourceAsStream(image));
+        } catch (IOException ex)
+        {
+            ex.printStackTrace();
+        }
+    }
     public GenericCar(int nrDoors, Color color, double enginePower, String modelName, int size) {
         this.nrDoors = nrDoors;
         this.color = color;
@@ -59,6 +80,8 @@ public abstract class GenericCar implements Movable{
         }
     }
     public void checkCollision(int xMax, int yMax) {
+
+
         if (x > xMax)
             x = xMax;
         else if (x < 0)

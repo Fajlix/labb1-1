@@ -11,7 +11,7 @@ public class Volvo240 extends GenericCar{
      * creates a new Volvo 240 car
      */
     public Volvo240(){
-        super(4, Color.black, 100, "Volvo240", 5);
+        super(4, Color.black, 100, "Volvo240", 5, "pics/Volvo240.jpg");
     }
 
     /**
