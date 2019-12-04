@@ -31,20 +31,19 @@ public abstract class GenericCar implements Movable{
      * @param modelName The model name of a car
      */
 
-    public GenericCar(int nrDoors, Color color, double enginePower, String modelName, int size, String image) {
+    public GenericCar(int nrDoors, Color color, double enginePower, String modelName, int size, String image, int x, int y) {
         this.nrDoors = nrDoors;
         this.color = color;
         this.enginePower = enginePower;
         this.modelName = modelName;
         this.size = size;
-        x = 0;
-        y = 0;
+        this.x = x;
+        this.y = y;
         direction = 2 * Math.PI;
         stopEngine();
         try {
             this.image = ImageIO.read(DrawPanel.class.getResourceAsStream(image));
-        } catch (IOException ex)
-        {
+        } catch (IOException ex) {
             ex.printStackTrace();
         }
     }
@@ -60,6 +59,9 @@ public abstract class GenericCar implements Movable{
         stopEngine();
     }
 
+    public BufferedImage getImage() {
+        return image;
+    }
 
     public double getDirection() {
         return direction;

@@ -20,6 +20,10 @@ public class CarController {
 
         cc.cars.add(new Volvo240());
 
+        cc.cars.add(new Scania(0,100));
+
+        cc.cars.add(new Saab95(0,200));
+
         cc.frame = new CarView("CarSim 1.0", cc);
 
         cc.timer.start();
@@ -31,20 +35,24 @@ public class CarController {
                 car.move();
                 int x = (int) Math.round(car.getX());
                 int y = (int) Math.round(car.getY());
-                if (x + frame.drawPanel.volvoImage.getWidth() > frame.drawPanel.getWidth() &&
+                if (x + car.getImage().getWidth() > frame.drawPanel.getWidth() &&
                         Math.cos(car.getDirection()) > 0 ||
                         x < 0 && Math.cos(car.getDirection()) < 0)
                 {
                     car.stopEngine();
                     car.turnAround();
                     car.startEngine();
-                    car.checkCollision(frame.drawPanel.getWidth() - frame.drawPanel.volvoImage.getWidth(),
-                            frame.drawPanel.getHeight() - frame.drawPanel.volvoImage.getHeight());
+                    car.checkCollision(frame.drawPanel.getWidth() - car.getImage().getWidth(),
+                            frame.drawPanel.getHeight() - car.getImage().getHeight());
                 }
-                frame.drawPanel.moveit(x, y);
+                frame.drawPanel.setCars(cars);
                 frame.drawPanel.repaint();
             }
         }
+    }
+
+    public ArrayList<GenericCar> getCars() {
+        return cars;
     }
 
     void gas(int amount) {
