@@ -35,15 +35,13 @@ public class CarController {
                 car.move();
                 int x = (int) Math.round(car.getX());
                 int y = (int) Math.round(car.getY());
-                if (x + car.getImage().getWidth() > frame.drawPanel.getWidth() &&
+                if (x + frame.drawPanel.getImage(car.getModelName()).getWidth() > frame.drawPanel.getWidth() &&
                         Math.cos(car.getDirection()) > 0 ||
                         x < 0 && Math.cos(car.getDirection()) < 0)
                 {
                     car.stopEngine();
                     car.turnAround();
                     car.startEngine();
-                    car.checkCollision(frame.drawPanel.getWidth() - car.getImage().getWidth(),
-                            frame.drawPanel.getHeight() - car.getImage().getHeight());
                 }
                 frame.drawPanel.setCars(cars);
                 frame.drawPanel.repaint();
@@ -67,6 +65,13 @@ public class CarController {
         for (GenericCar car : cars
         ) {
             car.brake(brake);
+        }
+    }
+    void turboOn() {
+        for (GenericCar car : cars) {
+            if (car.getClass() == Saab95.class) {
+                ((Saab95) car).setTurboOn();
+            }
         }
     }
 }

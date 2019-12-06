@@ -8,10 +8,10 @@ public class Scania extends GenericCar{
      * creates a new Scania
      */
     public Scania() {
-        super(2, Color.black, 220, "Scania", 11, "pics/Scania.jpg",0,0);
+        super(2, Color.black, 220, "Scania", 11,0,0);
     }
     public Scania(int x, int y)  {
-        super(2, Color.black, 220, "Scania", 11, "pics/Scania.jpg",x,y);
+        super(2, Color.black, 220, "Scania", 11,x,y);
     }
 
     /**

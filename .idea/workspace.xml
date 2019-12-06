@@ -15,12 +15,9 @@
       <change beforePath="$PROJECT_DIR$/out/production/labb1-1/CarView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/labb1-1/CarView.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/labb1-1/DrawPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/labb1-1/DrawPanel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/labb1-1/GenericCar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/labb1-1/GenericCar.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/labb1-1/IFlatbed.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/labb1-1/IStoreCars.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/labb1-1/Movable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/labb1-1/Movable.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/labb1-1/Saab95.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/labb1-1/Saab95.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/labb1-1/Scania.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/labb1-1/Scania.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/labb1-1/StoreCars.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/labb1-1/Volvo240.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/labb1-1/Volvo240.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/labb1-1/BodyShopTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/labb1-1/BodyShopTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/labb1-1/CarTransportTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/labb1-1/CarTransportTest.class" afterDir="false" />
@@ -30,16 +27,17 @@
       <change beforePath="$PROJECT_DIR$/out/test/labb1-1/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/labb1-1/Test.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/labb1-1/TestCar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/labb1-1/TestCar.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/labb1-1/Volvo240Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/labb1-1/Volvo240Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BodyShop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BodyShop.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CarController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CarTransport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CarTransport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CarView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CarView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DrawPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DrawPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GenericCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenericCar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IFlatbed.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IStoreCars.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Saab95.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Saab95.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Scania.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Scania.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StoreCars.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Volvo240.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Volvo240.java" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,8 +67,20 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
   <component name="RunManager">
-    <configuration name="CarController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="CarController" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CarController" />
       <module name="labb1-1" />
       <method v="2">
@@ -83,21 +93,8 @@
         <item itemvalue="Application.CarController" />
         <item itemvalue="Application.CarController" />
         <item itemvalue="Application.CarController" />
-        <item itemvalue="Application.CarController" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -126,61 +123,33 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="765" y="240" key="#com.intellij.ide.util.MemberChooser" timestamp="1575382758675">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="765" y="240" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" timestamp="1575382758675" />
-    <state x="808" y="428" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1575303259109">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="808" y="428" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" timestamp="1575303259109" />
-    <state x="756" y="399" width="408" height="291" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1575303734610">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="756" y="399" width="408" height="291" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" timestamp="1575303734610" />
-    <state x="690" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1575303741725">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="690" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" timestamp="1575303741725" />
-    <state width="1877" height="295" key="GridCell.Tab.0.bottom" timestamp="1575383220509">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1877" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" timestamp="1575383220509" />
-    <state width="1877" height="295" key="GridCell.Tab.0.center" timestamp="1575383220509">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1877" height="295" key="GridCell.Tab.0.center/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" timestamp="1575383220509" />
-    <state width="1877" height="295" key="GridCell.Tab.0.left" timestamp="1575383220509">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1877" height="295" key="GridCell.Tab.0.left/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" timestamp="1575383220509" />
-    <state width="1877" height="295" key="GridCell.Tab.0.right" timestamp="1575383220509">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1877" height="295" key="GridCell.Tab.0.right/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" timestamp="1575383220509" />
-    <state x="672" y="255" key="MultipleFileMergeDialog" timestamp="1575303217474">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="672" y="255" key="MultipleFileMergeDialog/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" timestamp="1575303217474" />
-    <state x="440" y="114" key="SettingsEditor" timestamp="1575303189825">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="440" y="114" key="SettingsEditor/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" timestamp="1575303189825" />
-    <state x="-1951" y="-11" width="1893" height="1068" maximized="true" key="dock-window-1" timestamp="1575380573151">
-      <screen x="-1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="-1951" y="-11" width="1893" height="1068" maximized="true" key="dock-window-1/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" timestamp="1575380573151" />
-    <state x="656" y="145" width="607" height="789" key="find.popup" timestamp="1575303869120">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="656" y="145" width="607" height="789" key="find.popup/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" timestamp="1575303869120" />
-    <state x="741" y="252" key="git4idea.branch.GitSmartOperationDialog" timestamp="1575303214407">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="741" y="252" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" timestamp="1575303214407" />
-    <state x="616" y="250" key="run.anything.popup" timestamp="1575382915832">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="616" y="250" key="run.anything.popup/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" timestamp="1575382915832" />
+    <state x="765" y="240" key="#com.intellij.ide.util.MemberChooser" />
+    <state x="765" y="240" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" />
+    <state x="808" y="428" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" />
+    <state x="808" y="428" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" />
+    <state x="756" y="399" width="408" height="291" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" />
+    <state x="756" y="399" width="408" height="291" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" />
+    <state x="690" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" />
+    <state x="690" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" />
+    <state width="1877" height="295" key="GridCell.Tab.0.bottom" />
+    <state width="1877" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" />
+    <state width="1877" height="295" key="GridCell.Tab.0.center" />
+    <state width="1877" height="295" key="GridCell.Tab.0.center/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" />
+    <state width="1877" height="295" key="GridCell.Tab.0.left" />
+    <state width="1877" height="295" key="GridCell.Tab.0.left/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" />
+    <state width="1877" height="295" key="GridCell.Tab.0.right" />
+    <state width="1877" height="295" key="GridCell.Tab.0.right/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" />
+    <state x="672" y="255" key="MultipleFileMergeDialog" />
+    <state x="672" y="255" key="MultipleFileMergeDialog/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" />
+    <state x="440" y="114" key="SettingsEditor" />
+    <state x="440" y="114" key="SettingsEditor/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" />
+    <state x="-1951" y="-11" width="1893" height="1068" maximized="true" key="dock-window-1" />
+    <state x="-1951" y="-11" width="1893" height="1068" maximized="true" key="dock-window-1/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" />
+    <state x="656" y="145" width="607" height="789" key="find.popup" />
+    <state x="656" y="145" width="607" height="789" key="find.popup/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" />
+    <state x="741" y="252" key="git4idea.branch.GitSmartOperationDialog" />
+    <state x="741" y="252" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" />
+    <state x="616" y="250" key="run.anything.popup" />
+    <state x="616" y="250" key="run.anything.popup/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" />
   </component>
 </project>

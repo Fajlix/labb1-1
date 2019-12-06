@@ -63,8 +63,11 @@ public class CarTransport extends GenericCar {
 
     public void addCar (GenericCar car) {
         if (carsList.size() < MAX_CARS && car.getSize() < MAX_SIZE && car.getClass() != this.getClass() &&
-        flatbedPos == FlatbedPos.DOWN && getDistance(car) <= MAX_DISTANCE)
+        flatbedPos == FlatbedPos.DOWN && getDistance(car) <= MAX_DISTANCE && getCurrentSpeed() == 0 &&
+        !car.isLoaded()) {
             carsList.push(car);
+            car.loadVehicle();
+        }
     }
 
     /**
@@ -72,12 +75,25 @@ public class CarTransport extends GenericCar {
      * @return returns the vehicle that got removed
      */
     public GenericCar removeNextCar () {
-        if (!carsList.isEmpty() && flatbedPos== FlatbedPos.DOWN) {
-            carsList.peek().removeFromTransport(this);
+        if (!carsList.isEmpty() && flatbedPos== FlatbedPos.DOWN && getCurrentSpeed() == 0) {
+            carsList.peek().unloadVehicle();
             return carsList.pop();
         }
         else
             return null;
+    }
+
+    @Override
+    public void move() {
+        if (!isLoaded()) {
+            double x = getX() + getCurrentSpeed() * Math.cos(getDirection());
+            double y = getY() +  getCurrentSpeed() * Math.sin(getDirection());
+            setXY(x, y);
+
+            for (GenericCar car : carsList) {
+                car.setXY(x, y);
+            }
+        }
     }
 
     /**

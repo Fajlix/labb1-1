@@ -11,10 +11,10 @@ public class Volvo240 extends GenericCar{
      * creates a new Volvo 240 car
      */
     public Volvo240(){
-        super(4, Color.black, 100, "Volvo240", 5, "pics/Volvo240.jpg", 0,0);
+        super(4, Color.black, 100, "Volvo240", 5, 0,0);
     }
     public Volvo240(int x, int y) {
-        super(4, Color.black, 100, "Volvo240", 5, "pics/Volvo240.jpg", x,y);
+        super(4, Color.black, 100, "Volvo240", 5, x,y);
     }
 
     /**
