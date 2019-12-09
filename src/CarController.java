@@ -17,15 +17,10 @@ public class CarController {
 
     public static void main(String[] args) {
         CarController cc = new CarController();
-
         cc.cars.add(new Volvo240());
-
         cc.cars.add(new Scania(0,100));
-
         cc.cars.add(new Saab95(0,200));
-
         cc.frame = new CarView("CarSim 1.0", cc);
-
         cc.timer.start();
     }
 
@@ -35,15 +30,13 @@ public class CarController {
                 car.move();
                 int x = (int) Math.round(car.getX());
                 int y = (int) Math.round(car.getY());
-                if (x + car.getImage().getWidth() > frame.drawPanel.getWidth() &&
+                if (x + frame.drawPanel.getImage(car.getModelName()).getWidth() > frame.drawPanel.getWidth() &&
                         Math.cos(car.getDirection()) > 0 ||
                         x < 0 && Math.cos(car.getDirection()) < 0)
                 {
                     car.stopEngine();
                     car.turnAround();
                     car.startEngine();
-                    car.checkCollision(frame.drawPanel.getWidth() - car.getImage().getWidth(),
-                            frame.drawPanel.getHeight() - car.getImage().getHeight());
                 }
                 frame.drawPanel.setCars(cars);
                 frame.drawPanel.repaint();

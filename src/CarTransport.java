@@ -17,9 +17,18 @@ public class CarTransport extends GenericCar {
      * creates a new CarTransport
      * @param maxCars max cars a carTransport can handle
      */
+
     public CarTransport(int maxCars) {
-        super(2,Color.black,220,"CarTransport", 20);
+        super(2,Color.black,220,"CarTransport", 20,0,0);
         MAX_CARS = maxCars;
+    }
+    @Override
+    public void move (){
+        super.move();
+        for (GenericCar car :carsList){
+            car.setX(getX());
+            car.setY(getY());
+        }
     }
     /**
      * the speed factor for a Cartransport
@@ -63,8 +72,10 @@ public class CarTransport extends GenericCar {
 
     public void addCar (GenericCar car) {
         if (carsList.size() < MAX_CARS && car.getSize() < MAX_SIZE && car.getClass() != this.getClass() &&
-        flatbedPos == FlatbedPos.DOWN && getDistance(car) <= MAX_DISTANCE)
+        flatbedPos == FlatbedPos.DOWN && getDistance(car) <= MAX_DISTANCE && !car.isLoaded()) {
             carsList.push(car);
+            car.setLoaded();
+        }
     }
 
     /**
@@ -73,7 +84,7 @@ public class CarTransport extends GenericCar {
      */
     public GenericCar removeNextCar () {
         if (!carsList.isEmpty() && flatbedPos== FlatbedPos.DOWN) {
-            carsList.peek().removeFromTransport(this);
+            carsList.peek().setNotLoaded();
             return carsList.pop();
         }
         else

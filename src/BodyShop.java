@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class BodyShop <T> {
+public class BodyShop <T extends GenericCar >{
     private final int MAX_CARS;
     private ArrayList<T> Garage = new ArrayList<>();;
 

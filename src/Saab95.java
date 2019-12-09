@@ -14,11 +14,11 @@ public class Saab95 extends GenericCar{
      * creates a new Saab 95 car
      */
     public Saab95(){
-        super(2, Color.red, 125, "Saab95", 4, "pics/Saab95.jpg",0,0);
+        super(2, Color.red, 125, "Saab95", 4,0,0);
     }
 
     public Saab95(int x, int y){
-        super(2, Color.red, 125, "Saab95", 4, "pics/Saab95.jpg",x,y);
+        super(2, Color.red, 125, "Saab95", 4, x,y);
     }
 
     public boolean isTurboOn() {
