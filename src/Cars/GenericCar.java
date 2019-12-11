@@ -1,10 +1,14 @@
 package Cars;
+
+import javax.imageio.ImageIO;
 import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.io.IOException;
 
 /**
- * Cars.GenericCar class used as a base class for cars
+ * GenericCar class used as a base class for cars
  */
-public abstract class GenericCar implements IGenericCar {
+public abstract class GenericCar implements IGenericCar{
 
     private int size;
     private final int nrDoors; // Number of doors on the car
@@ -106,7 +110,7 @@ public abstract class GenericCar implements IGenericCar {
      * get the engine power of a car
      * @return returns engine power
      */
-    double getEnginePower() {
+    public double getEnginePower() {
         return enginePower;
     }
 
@@ -142,8 +146,7 @@ public abstract class GenericCar implements IGenericCar {
      * starts a cars engine
      */
     public void startEngine(){
-        if (currentSpeed == 0)
-            currentSpeed = 0.1;
+        currentSpeed = 0.1;
     }
 
     /**
@@ -158,6 +161,8 @@ public abstract class GenericCar implements IGenericCar {
      * @return returns the speed factor for a car
      */
     public abstract double speedFactor();
+
+
 
     /**
      * increments the speed of a Car
