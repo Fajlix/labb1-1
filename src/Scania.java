@@ -15,6 +15,16 @@ public class Scania extends GenericCar{
     }
 
     /**
+     * starts the engine
+     */
+    @Override
+    public void startEngine() {
+        if (flatbedAngle == 0) {
+            super.startEngine();
+        }
+    }
+
+    /**
      * the speed factor for a Scania
      * @return returns the speed factor of a Scania
      */

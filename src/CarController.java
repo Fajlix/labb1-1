@@ -1,6 +1,7 @@
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.rmi.activation.ActivationID;
 import java.util.ArrayList;
 
 /*
@@ -15,6 +16,22 @@ public class CarController {
     CarView frame;
     ArrayList<GenericCar> cars = new ArrayList<>();
 
+    public CarController() {
+        frame = new CarView("CarSim 1.0", this);
+
+        frame.gasButton.addActionListener(e -> gas(frame.gasAmount));
+        frame.brakeButton.addActionListener(e -> brake(frame.gasAmount));
+
+        frame.turboOnButton.addActionListener(e-> turboOn());
+        frame.turboOffButton.addActionListener(e -> turboOff());
+
+        frame.liftBedButton.addActionListener(e -> liftBed());
+        frame.lowerBedButton.addActionListener(e -> lowerBed());
+
+        frame.startButton.addActionListener(e -> start());
+        frame.stopButton.addActionListener(e -> stop());
+    }
+
     public static void main(String[] args) {
         CarController cc = new CarController();
 
@@ -24,7 +41,7 @@ public class CarController {
 
         cc.cars.add(new Saab95(0,200));
 
-        cc.frame = new CarView("CarSim 1.0", cc);
+        //cc.frame = new CarView("CarSim 1.0", cc);
 
         cc.timer.start();
     }
@@ -72,6 +89,42 @@ public class CarController {
             if (car.getClass() == Saab95.class) {
                 ((Saab95) car).setTurboOn();
             }
+        }
+    }
+
+    void turboOff() {
+        for (GenericCar car : cars) {
+            if (car.getClass() == Saab95.class) {
+                ((Saab95) car).setTurboOff();
+            }
+        }
+    }
+
+    void liftBed() {
+        for (GenericCar car : cars) {
+            if (car.getClass() == Scania.class) {
+                ((Scania) car).incrementAngle();
+            }
+        }
+    }
+
+    void lowerBed() {
+        for (GenericCar car : cars) {
+            if (car.getClass() == Scania.class) {
+                ((Scania) car).decrementAngle();
+            }
+        }
+    }
+
+    void start() {
+        for (GenericCar car : cars) {
+            car.startEngine();
+        }
+    }
+
+    void stop() {
+        for (GenericCar car : cars) {
+            car.stopEngine();
         }
     }
 }

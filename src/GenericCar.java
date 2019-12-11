@@ -142,7 +142,7 @@ public abstract class GenericCar implements Movable{
      * starts a cars engine
      */
     public void startEngine(){
-        if (!isLoaded)
+        if (!isLoaded && currentSpeed == 0)
             currentSpeed = 0.1;
     }
 
