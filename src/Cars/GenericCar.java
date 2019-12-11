@@ -1,12 +1,10 @@
-import javax.imageio.ImageIO;
+package Cars;
 import java.awt.*;
-import java.awt.image.BufferedImage;
-import java.io.IOException;
 
 /**
- * GenericCar class used as a base class for cars
+ * Cars.GenericCar class used as a base class for cars
  */
-public abstract class GenericCar implements Movable{
+public abstract class GenericCar implements IGenericCar {
 
     private int size;
     private final int nrDoors; // Number of doors on the car
@@ -108,7 +106,7 @@ public abstract class GenericCar implements Movable{
      * get the engine power of a car
      * @return returns engine power
      */
-    public double getEnginePower() {
+    double getEnginePower() {
         return enginePower;
     }
 
@@ -144,7 +142,8 @@ public abstract class GenericCar implements Movable{
      * starts a cars engine
      */
     public void startEngine(){
-        currentSpeed = 0.1;
+        if (currentSpeed == 0)
+            currentSpeed = 0.1;
     }
 
     /**
@@ -158,9 +157,7 @@ public abstract class GenericCar implements Movable{
      * the speed factor for a object
      * @return returns the speed factor for a car
      */
-    protected abstract double speedFactor();
-
-
+    public abstract double speedFactor();
 
     /**
      * increments the speed of a Car
@@ -218,9 +215,4 @@ public abstract class GenericCar implements Movable{
             decrementSpeed(amount);
         }
     }
-
-    /**
-     * set "parent carTransport"
-     * @param carTransport a carTransport
-     */
 }

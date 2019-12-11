@@ -1,47 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="928b40dd-5562-4dca-8d9f-715ebdcd77ca" name="Default Changelist" comment="">
+    <list default="true" id="928b40dd-5562-4dca-8d9f-715ebdcd77ca" name="Default Changelist" comment="update">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/Cars/ScaniaTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Cars/IGenericCar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doc/BodyShop.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doc/BodyShop.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doc/CarTransport.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doc/CarTransport.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doc/GenericCar.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doc/GenericCar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doc/IStoreCars.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doc/IStoreCars.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doc/Movable.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doc/Movable.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doc/Saab95.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doc/Saab95.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doc/Scania.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doc/Scania.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doc/StoreCars.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doc/StoreCars.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doc/TestCar.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doc/TestCar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doc/Volvo240.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doc/Volvo240.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doc/allclasses-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doc/allclasses-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doc/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doc/constant-values.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doc/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doc/index-files/index-1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doc/index-files/index-10.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doc/index-files/index-10.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doc/index-files/index-11.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doc/index-files/index-11.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doc/index-files/index-12.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doc/index-files/index-12.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doc/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doc/index-files/index-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doc/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doc/index-files/index-3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doc/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doc/index-files/index-4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doc/index-files/index-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doc/index-files/index-5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doc/index-files/index-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doc/index-files/index-6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doc/index-files/index-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doc/index-files/index-7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doc/index-files/index-8.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doc/index-files/index-8.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doc/index-files/index-9.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doc/index-files/index-9.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doc/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doc/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doc/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doc/overview-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doc/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doc/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doc/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doc/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1del1PM.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1del1PM.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1del2PM.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1del2PM.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/BodyShopTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/BodyShopTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/CarTransportTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/CarTransportTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/GenericCarTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/GenericCarTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Saab95Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Saab95Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/ScaniaTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Test/TestCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/TestCar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/labb1-1/BodyShop.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/labb1-1/BodyShop.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Volvo240Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Volvo240Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/labb1-1/BodyShop.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/labb1-1/CarController$TimerListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/labb1-1/CarController$TimerListener.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/labb1-1/CarController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/labb1-1/CarController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/labb1-1/CarTransport$FlatbedPos.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/labb1-1/CarTransport$FlatbedPos.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/labb1-1/CarTransport.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/labb1-1/CarTransport.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/labb1-1/CarTransport$FlatbedPos.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/labb1-1/CarTransport.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/labb1-1/CarView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/labb1-1/CarView$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/labb1-1/CarView$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/labb1-1/CarView$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/labb1-1/CarView$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/labb1-1/CarView$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/labb1-1/CarView$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/labb1-1/CarView$3.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/labb1-1/CarView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/labb1-1/CarView.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/labb1-1/DrawPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/labb1-1/DrawPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/labb1-1/GenericCar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/labb1-1/GenericCar.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/labb1-1/Movable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/labb1-1/Movable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/labb1-1/Saab95.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/labb1-1/Saab95.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/labb1-1/Scania.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/labb1-1/Scania.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/labb1-1/Volvo240.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/labb1-1/Volvo240.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/labb1-1/GenericCar.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/labb1-1/Movable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/labb1-1/Saab95.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/labb1-1/Scania.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/labb1-1/Volvo240.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/labb1-1/BodyShopTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/labb1-1/BodyShopTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/labb1-1/CarTransportTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/labb1-1/CarTransportTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/labb1-1/GenericCarTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/labb1-1/GenericCarTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/labb1-1/Saab95Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/labb1-1/Saab95Test.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/labb1-1/ScaniaTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/labb1-1/ScaniaTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/labb1-1/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/labb1-1/Test.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/labb1-1/TestCar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/labb1-1/TestCar.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/labb1-1/Volvo240Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/labb1-1/Volvo240Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BodyShop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BodyShop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BodyShop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cars/BodyShop.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CarController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CarTransport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CarTransport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CarTransport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cars/CarTransport.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CarView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CarView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DrawPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DrawPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GenericCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenericCar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Saab95.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Saab95.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Scania.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Scania.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Volvo240.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Volvo240.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GenericCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cars/GenericCar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Movable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cars/Movable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Saab95.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cars/Saab95.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scania.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cars/Scania.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Volvo240.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cars/Volvo240.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Interface" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -50,6 +97,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="1UHk38uiFheiTP3pyKLSw9gGzpb" />
   <component name="ProjectViewState">
@@ -63,10 +111,25 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Cars" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="Cars" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\java\code\labb1-1\src\Cars" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="CarController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -129,15 +192,16 @@
     <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="233" y="3" key="#Project_Structure" timestamp="1575469165401">
-      <screen x="0" y="0" width="1280" height="689" />
+    <state x="350" y="5" key="#Project_Structure" timestamp="1575899247831">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="233" y="3" key="#Project_Structure/0.0.1280.689@0.0.1280.689" timestamp="1575469165401" />
-    <state x="510" y="91" key="#com.intellij.ide.util.MemberChooser" timestamp="1575637055742">
-      <screen x="0" y="0" width="1280" height="689" />
+    <state x="350" y="5" key="#Project_Structure/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" timestamp="1575899247831" />
+    <state x="765" y="240" key="#com.intellij.ide.util.MemberChooser" timestamp="1575905929940">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="510" y="91" key="#com.intellij.ide.util.MemberChooser/0.0.1280.689@0.0.1280.689" timestamp="1575637055742" />
-    <state x="765" y="240" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" timestamp="1575382758675" />
+    <state x="765" y="240" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" timestamp="1575905929940" />
     <state x="808" y="428" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1575303259109">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -146,50 +210,59 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="756" y="399" width="408" height="291" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" timestamp="1575303734610" />
-    <state x="690" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1575303741725">
+    <state x="690" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1575918658167">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="690" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" timestamp="1575303741725" />
-    <state x="297" y="0" key="CommitChangelistDialog2" timestamp="1575899066562">
-      <screen x="0" y="0" width="1280" height="689" />
+    <state x="690" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" timestamp="1575918658167" />
+    <state x="-1474" y="0" key="CommitChangelistDialog2" timestamp="1576086393427">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="297" y="0" key="CommitChangelistDialog2/0.0.1280.689@0.0.1280.689" timestamp="1575899066562" />
-    <state width="1237" height="208" key="GridCell.Tab.0.bottom" timestamp="1575883740605">
-      <screen x="0" y="0" width="1280" height="689" />
+    <state x="-1474" y="0" key="CommitChangelistDialog2/0.0.1920.1080/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1576086393427" />
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1576011656822">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1237" height="208" key="GridCell.Tab.0.bottom/0.0.1280.689@0.0.1280.689" timestamp="1575883740605" />
-    <state width="1877" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" timestamp="1575383220509" />
-    <state width="1237" height="208" key="GridCell.Tab.0.center" timestamp="1575883740604">
-      <screen x="0" y="0" width="1280" height="689" />
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1080/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1576011656822" />
+    <state width="1877" height="364" key="GridCell.Tab.0.bottom/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" timestamp="1575919582754" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1576011656822">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1237" height="208" key="GridCell.Tab.0.center/0.0.1280.689@0.0.1280.689" timestamp="1575883740604" />
-    <state width="1877" height="295" key="GridCell.Tab.0.center/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" timestamp="1575383220509" />
-    <state width="1237" height="208" key="GridCell.Tab.0.left" timestamp="1575883740604">
-      <screen x="0" y="0" width="1280" height="689" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1080/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1576011656822" />
+    <state width="1877" height="364" key="GridCell.Tab.0.center/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" timestamp="1575919582754" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1576011656822">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1237" height="208" key="GridCell.Tab.0.left/0.0.1280.689@0.0.1280.689" timestamp="1575883740604" />
-    <state width="1877" height="295" key="GridCell.Tab.0.left/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" timestamp="1575383220509" />
-    <state width="1237" height="208" key="GridCell.Tab.0.right" timestamp="1575883740605">
-      <screen x="0" y="0" width="1280" height="689" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1080/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1576011656822" />
+    <state width="1877" height="364" key="GridCell.Tab.0.left/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" timestamp="1575919582754" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1576011656822">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1237" height="208" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1575883740605" />
-    <state width="1877" height="295" key="GridCell.Tab.0.right/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" timestamp="1575383220509" />
-    <state width="1237" height="208" key="GridCell.Tab.1.bottom" timestamp="1575883740605">
-      <screen x="0" y="0" width="1280" height="689" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1080/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1576011656822" />
+    <state width="1877" height="364" key="GridCell.Tab.0.right/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" timestamp="1575919582754" />
+    <state width="1877" height="364" key="GridCell.Tab.1.bottom" timestamp="1575919582755">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1237" height="208" key="GridCell.Tab.1.bottom/0.0.1280.689@0.0.1280.689" timestamp="1575883740605" />
-    <state width="1237" height="208" key="GridCell.Tab.1.center" timestamp="1575883740605">
-      <screen x="0" y="0" width="1280" height="689" />
+    <state width="1877" height="364" key="GridCell.Tab.1.bottom/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" timestamp="1575919582755" />
+    <state width="1877" height="364" key="GridCell.Tab.1.center" timestamp="1575919582754">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1237" height="208" key="GridCell.Tab.1.center/0.0.1280.689@0.0.1280.689" timestamp="1575883740605" />
-    <state width="1237" height="208" key="GridCell.Tab.1.left" timestamp="1575883740605">
-      <screen x="0" y="0" width="1280" height="689" />
+    <state width="1877" height="364" key="GridCell.Tab.1.center/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" timestamp="1575919582754" />
+    <state width="1877" height="364" key="GridCell.Tab.1.left" timestamp="1575919582754">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1237" height="208" key="GridCell.Tab.1.left/0.0.1280.689@0.0.1280.689" timestamp="1575883740605" />
-    <state width="1237" height="208" key="GridCell.Tab.1.right" timestamp="1575883740605">
-      <screen x="0" y="0" width="1280" height="689" />
+    <state width="1877" height="364" key="GridCell.Tab.1.left/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" timestamp="1575919582754" />
+    <state width="1877" height="364" key="GridCell.Tab.1.right" timestamp="1575919582755">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1237" height="208" key="GridCell.Tab.1.right/0.0.1280.689@0.0.1280.689" timestamp="1575883740605" />
+    <state width="1877" height="364" key="GridCell.Tab.1.right/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" timestamp="1575919582755" />
     <state x="672" y="255" key="MultipleFileMergeDialog" timestamp="1575303217474">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -198,6 +271,14 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="440" y="114" key="SettingsEditor/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" timestamp="1575303189825" />
+    <state x="-1151" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1576086370497">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1151" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1080/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1576086370497" />
+    <state x="731" y="258" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1575918976892">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="731" y="258" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" timestamp="1575918976892" />
     <state x="-1951" y="-11" width="1893" height="1068" maximized="true" key="dock-window-1" timestamp="1575380573151">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>

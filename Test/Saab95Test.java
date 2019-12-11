@@ -1,3 +1,4 @@
+import Cars.Saab95;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -8,22 +9,22 @@ class Saab95Test {
     void setTurboOn() {
         Saab95 testCar = new Saab95();
         testCar.setTurboOn();
-        assertTrue(testCar.isTurboOn() == true);
+        assertTrue(testCar.isTurboOn());
     }
 
     @Test
     void setTurboOff() {
         Saab95 testCar = new Saab95();
         testCar.setTurboOff();
-        assertTrue(testCar.isTurboOn() == false);
+        assertFalse(testCar.isTurboOn());
     }
 
     @Test
     void speedFactor() {
         Saab95 testCar = new Saab95();
         testCar.setTurboOff();
-        assertTrue(testCar.speedFactor() == 1.25);
+        assertEquals(1.25, testCar.speedFactor());
         testCar.setTurboOn();
-        assertTrue(testCar.speedFactor() == 1.625);
+        assertEquals(1.625, testCar.speedFactor());
     }
 }

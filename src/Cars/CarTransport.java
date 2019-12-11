@@ -1,10 +1,11 @@
+package Cars;
+
 import java.awt.*;
 import java.util.ArrayDeque;
-import java.util.ArrayList;
 import java.util.Deque;
 
 public class CarTransport extends GenericCar {
-    enum FlatbedPos {UP, DOWN}
+    public enum FlatbedPos {UP, DOWN}
 
     private FlatbedPos flatbedPos = FlatbedPos.UP;
     private Deque<GenericCar> carsList = new ArrayDeque<>();
@@ -14,7 +15,7 @@ public class CarTransport extends GenericCar {
 
 
     /**
-     * creates a new CarTransport
+     * creates a new Cars.CarTransport
      * @param maxCars max cars a carTransport can handle
      */
 
@@ -35,7 +36,7 @@ public class CarTransport extends GenericCar {
      * @return returns the speed factor for a carTransport
      */
     @Override
-    protected double speedFactor() {
+    public double speedFactor() {
         return getEnginePower() * 0.01;
     }
 
@@ -66,7 +67,7 @@ public class CarTransport extends GenericCar {
     }
 
     /**
-     * adds a car to the CarTransport, to it's carList
+     * adds a car to the Cars.CarTransport, to it's carList
      * @param car a vehicle
      */
 
@@ -79,7 +80,7 @@ public class CarTransport extends GenericCar {
     }
 
     /**
-     * removes the next car out of the CarTransport
+     * removes the next car out of the Cars.CarTransport
      * @return returns the vehicle that got removed
      */
     public GenericCar removeNextCar () {

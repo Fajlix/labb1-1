@@ -12,8 +12,8 @@ class GenericCarTest {
         TestCar testCar = new TestCar();
         testCar.gas(1);
         testCar.move();
-        assertTrue(testCar.getX() == 1);
-        assertTrue(testCar.getY() == 0);
+        assertEquals(1, testCar.getX());
+        assertEquals(0, testCar.getY());
     }
 
     @Test
@@ -33,46 +33,40 @@ class GenericCarTest {
     @Test
     void getNrDoors() {
         TestCar testCar = new TestCar();
-        assertTrue(testCar.getNrDoors() == 2);
-    }
-
-    @Test
-    void getEnginePower() {
-        TestCar testCar = new TestCar();
-        assertTrue(testCar.getEnginePower() == 100);
+        assertEquals(2, testCar.getNrDoors());
     }
 
     @Test
     void getCurrentSpeed() {
         TestCar testCar = new TestCar();
-        assertTrue(testCar.getCurrentSpeed() == 0);
+        assertEquals(0, testCar.getCurrentSpeed());
     }
 
     @Test
     void getColor() {
         TestCar testCar = new TestCar();
-        assertTrue(testCar.getColor() == Color.red);
+        assertSame(testCar.getColor(), Color.red);
     }
 
     @Test
     void setColor() {
         TestCar testCar = new TestCar();
         testCar.setColor(Color.black);
-        assertTrue(testCar.getColor() == Color.black);
+        assertSame(testCar.getColor(), Color.black);
     }
 
     @Test
     void startEngine() {
         TestCar testCar = new TestCar();
         testCar.startEngine();
-        assertTrue(testCar.getCurrentSpeed() == 0.1);
+        assertEquals(0.1, testCar.getCurrentSpeed());
     }
 
     @Test
     void stopEngine() {
         TestCar testCar = new TestCar();
         testCar.stopEngine();
-        assertTrue(testCar.getCurrentSpeed() == 0);
+        assertEquals(0, testCar.getCurrentSpeed());
     }
 
 
@@ -81,7 +75,7 @@ class GenericCarTest {
         TestCar testCar = new TestCar();
         testCar.startEngine();
         testCar.gas(1);
-        assertTrue(testCar.getCurrentSpeed() == 1.1);
+        assertEquals(1.1, testCar.getCurrentSpeed());
     }
 
     @Test
