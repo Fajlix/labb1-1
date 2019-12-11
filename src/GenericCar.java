@@ -3,6 +3,7 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 
+
 /**
  * GenericCar class used as a base class for cars
  */
@@ -17,7 +18,8 @@ public abstract class GenericCar implements Movable{
     private double x; // Current x coordinate
     private double y; // Current y Coordinate
     private double direction; // Current direction
-    private boolean isLoaded;
+    private CarTransport carTransport;
+    private BufferedImage image;
 
 
     /**
@@ -28,7 +30,7 @@ public abstract class GenericCar implements Movable{
      * @param modelName The model name of a car
      */
 
-    public GenericCar(int nrDoors, Color color, double enginePower, String modelName, int size, int x, int y) {
+    public GenericCar(int nrDoors, Color color, double enginePower, String modelName, int size, String image, int x, int y) {
         this.nrDoors = nrDoors;
         this.color = color;
         this.enginePower = enginePower;
@@ -38,11 +40,26 @@ public abstract class GenericCar implements Movable{
         this.y = y;
         direction = 2 * Math.PI;
         stopEngine();
-        isLoaded = false;
+        try {
+            this.image = ImageIO.read(DrawPanel.class.getResourceAsStream(image));
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+    }
+    public GenericCar(int nrDoors, Color color, double enginePower, String modelName, int size) {
+        this.nrDoors = nrDoors;
+        this.color = color;
+        this.enginePower = enginePower;
+        this.modelName = modelName;
+        this.size = size;
+        x = 0;
+        y = 0;
+        direction = 2 * Math.PI;
+        stopEngine();
     }
 
-    public String getModelName() {
-        return modelName;
+    public BufferedImage getImage() {
+        return image;
     }
 
     public double getDirection() {
@@ -53,10 +70,27 @@ public abstract class GenericCar implements Movable{
      *  Moves car with current speed in a direction
      */
     public void move(){
-        if (!isLoaded) {
+        if (carTransport != null)
+        {
+            x = carTransport.getX();
+            y = carTransport.getY();
+        }
+        else {
             x += currentSpeed * Math.cos(direction);
             y += currentSpeed * Math.sin(direction);
         }
+    }
+    public void checkCollision(int xMax, int yMax) {
+
+
+        if (x > xMax)
+            x = xMax;
+        else if (x < 0)
+            x = 0;
+        if (y > yMax)
+            y = yMax;
+        else if (y < 0)
+            y = 0;
     }
 
     /**
@@ -78,23 +112,6 @@ public abstract class GenericCar implements Movable{
             direction += Math.PI;
     }
 
-    public void setLoaded() {
-        isLoaded = true;
-    }
-    public void setNotLoaded(){
-        isLoaded = false;
-    }
-    public boolean isLoaded (){
-        return isLoaded;
-    }
-
-    public void setX(double x) {
-        this.x = x;
-    }
-
-    public void setY(double y) {
-        this.y = y;
-    }
 
     /**
      * get the number of doors on a car
@@ -160,14 +177,19 @@ public abstract class GenericCar implements Movable{
      */
     protected abstract double speedFactor();
 
-
+    public void removeFromTransport (CarTransport carTransport) {
+        if (this.carTransport == carTransport) {
+            x += CarTransport.MAX_DISTANCE;
+            this.carTransport = null;
+        }
+    }
 
     /**
      * increments the speed of a Car
      * @param amount the amount which the car should change speed with
      */
     private void incrementSpeed(double amount){
-        if (!isLoaded)
+        if (carTransport == null)
             currentSpeed = Math.min(currentSpeed + speedFactor() * amount,getEnginePower());
     }
 
@@ -176,7 +198,7 @@ public abstract class GenericCar implements Movable{
      * @param amount the amount which the car should change speed with
      */
     private void decrementSpeed(double amount){
-        if (!isLoaded)
+        if (carTransport == null)
             currentSpeed = Math.max(currentSpeed - speedFactor() * amount,0);
     }
 
@@ -223,4 +245,8 @@ public abstract class GenericCar implements Movable{
      * set "parent carTransport"
      * @param carTransport a carTransport
      */
+
+    public void setCarTransport(CarTransport carTransport) {
+        this.carTransport = carTransport;
+    }
 }
