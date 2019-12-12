@@ -3,7 +3,23 @@
   <component name="ChangeListManager">
     <list default="true" id="928b40dd-5562-4dca-8d9f-715ebdcd77ca" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/labb1-1/CarController$TimerListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/labb1-1/CarController$TimerListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/labb1-1/CarController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/labb1-1/CarController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/labb1-1/CarView$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/labb1-1/CarView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/labb1-1/CarView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/labb1-1/Cars/GenericCar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/labb1-1/Cars/GenericCar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/labb1-1/Cars/IGenericCar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/labb1-1/Cars/IGenericCar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/labb1-1/DrawPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/labb1-1/DrawPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/labb1-1/BodyShopTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/labb1-1/BodyShopTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/labb1-1/CarTransportTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/labb1-1/CarTransportTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/labb1-1/GenericCarTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/labb1-1/GenericCarTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/labb1-1/Saab95Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/labb1-1/Saab95Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/labb1-1/ScaniaTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/labb1-1/Volvo240Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/labb1-1/Volvo240Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CarController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CarView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CarView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cars/CarFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cars/CarFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DrawPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DrawPanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,26 +142,30 @@
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="297" y="0" key="CommitChangelistDialog2/0.0.1280.689@0.0.1280.689" timestamp="1576087483132" />
-    <state width="1237" height="208" key="GridCell.Tab.0.bottom" timestamp="1575883740605">
-      <screen x="0" y="0" width="1280" height="689" />
+    <state x="740" y="294" key="FileChooserDialogImpl" timestamp="1576153699860">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="740" y="294" key="FileChooserDialogImpl/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" timestamp="1576153699860" />
+    <state width="1877" height="294" key="GridCell.Tab.0.bottom" timestamp="1576183472353">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1237" height="208" key="GridCell.Tab.0.bottom/0.0.1280.689@0.0.1280.689" timestamp="1575883740605" />
-    <state width="1877" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" timestamp="1575383220509" />
-    <state width="1237" height="208" key="GridCell.Tab.0.center" timestamp="1575883740604">
-      <screen x="0" y="0" width="1280" height="689" />
+    <state width="1877" height="294" key="GridCell.Tab.0.bottom/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" timestamp="1576183472353" />
+    <state width="1877" height="294" key="GridCell.Tab.0.center" timestamp="1576183472353">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1237" height="208" key="GridCell.Tab.0.center/0.0.1280.689@0.0.1280.689" timestamp="1575883740604" />
-    <state width="1877" height="295" key="GridCell.Tab.0.center/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" timestamp="1575383220509" />
-    <state width="1237" height="208" key="GridCell.Tab.0.left" timestamp="1575883740604">
-      <screen x="0" y="0" width="1280" height="689" />
+    <state width="1877" height="294" key="GridCell.Tab.0.center/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" timestamp="1576183472353" />
+    <state width="1877" height="294" key="GridCell.Tab.0.left" timestamp="1576183472353">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1237" height="208" key="GridCell.Tab.0.left/0.0.1280.689@0.0.1280.689" timestamp="1575883740604" />
-    <state width="1877" height="295" key="GridCell.Tab.0.left/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" timestamp="1575383220509" />
-    <state width="1237" height="208" key="GridCell.Tab.0.right" timestamp="1575883740605">
-      <screen x="0" y="0" width="1280" height="689" />
+    <state width="1877" height="294" key="GridCell.Tab.0.left/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" timestamp="1576183472353" />
+    <state width="1877" height="294" key="GridCell.Tab.0.right" timestamp="1576183472353">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1237" height="208" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1575883740605" />
-    <state width="1877" height="295" key="GridCell.Tab.0.right/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" timestamp="1575383220509" />
+    <state width="1877" height="294" key="GridCell.Tab.0.right/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" timestamp="1576183472353" />
     <state width="1237" height="208" key="GridCell.Tab.1.bottom" timestamp="1575883740605">
       <screen x="0" y="0" width="1280" height="689" />
     </state>

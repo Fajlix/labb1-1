@@ -17,13 +17,13 @@ public class CarView extends JFrame{
 
     DrawPanel drawPanel = new DrawPanel(X, Y-240);
 
-
     JPanel controlPanel = new JPanel();
 
     JPanel gasPanel = new JPanel();
     JSpinner gasSpinner = new JSpinner();
     int gasAmount = 0;
     JLabel gasLabel = new JLabel("Amount of gas");
+    JLabel speedLabel;
 
     JButton gasButton = new JButton("Gas");
     JButton brakeButton = new JButton("Brake");
@@ -44,11 +44,15 @@ public class CarView extends JFrame{
     // TODO: Take a good look and make sure you understand how these methods and components work
     private void initComponents(String title) {
 
+
         this.setTitle(title);
         this.setPreferredSize(new Dimension(X,Y));
         this.setLayout(new FlowLayout(FlowLayout.LEFT, 0, 0));
 
         this.add(drawPanel);
+
+        speedLabel = new JLabel("Speed:  " + 0);
+        this.add(speedLabel);
 
         SpinnerModel spinnerModel =
                 new SpinnerNumberModel(0, //initial value

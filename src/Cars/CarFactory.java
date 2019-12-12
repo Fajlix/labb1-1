@@ -1,6 +1,6 @@
 package Cars;
 
-public class CarFactory{
+public class CarFactory {
     public static IGenericCar createSaab95(int x, int y){
         return new Saab95(x,y);
     }
