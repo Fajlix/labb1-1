@@ -1,9 +1,11 @@
+package Cars;
+
 import java.awt.*;
 
 /**
  * a car of type Volvo 240
  */
-public class Volvo240 extends GenericCar{
+public class Volvo240 extends GenericCar {
 
     private final static double trimFactor = 1.25; // A constant for the trim factor
 
@@ -22,7 +24,7 @@ public class Volvo240 extends GenericCar{
      * @return returns the speed factor of a Volvo 240
      */
 
-    protected double speedFactor(){
+    public double speedFactor(){
         return getEnginePower() * 0.01 * trimFactor;
     }
 }

@@ -1,9 +1,11 @@
+package Cars;
+
 import java.awt.*;
 
 /**
  * A car of type Saab 95
  */
-public class Saab95 extends GenericCar{
+public class Saab95 extends GenericCar {
 
     /**
      * Says if the turbo is on or off
@@ -24,7 +26,6 @@ public class Saab95 extends GenericCar{
     public boolean isTurboOn() {
         return turboOn;
     }
-
     /**
      * turns turbo on
      */

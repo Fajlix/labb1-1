@@ -1,3 +1,5 @@
+package Cars;
+
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -8,14 +10,14 @@ class ScaniaTest {
     @Test
     void speedFactor() {
         Scania testCar = new Scania();
-        assertTrue(testCar.speedFactor() == 2.2);
+        assertEquals(2.2, testCar.speedFactor());
     }
 
     @Test
     void incrementAngle() {
         Scania testCar = new Scania();
         testCar.incrementAngle();
-        assertTrue(testCar.getFlatbedAngle() == 0.1);
+        assertEquals(0.1, testCar.getFlatbedAngle());
     }
 
     @Test
@@ -24,13 +26,13 @@ class ScaniaTest {
         testCar.incrementAngle();
         testCar.incrementAngle();
         testCar.decrementAngle();
-        assertTrue(testCar.getFlatbedAngle() == 0.1);
+        assertEquals(0.1, testCar.getFlatbedAngle());
     }
 
     @Test
     void getFlatbedAngle() {
         Scania testCar = new Scania();
-        assertTrue(testCar.getFlatbedAngle() == 0);
+        assertEquals(0, testCar.getFlatbedAngle());
     }
 
     @Test

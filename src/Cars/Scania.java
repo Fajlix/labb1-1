@@ -1,11 +1,13 @@
+package Cars;
+
 import java.awt.*;
 
-public class Scania extends GenericCar{
+public class Scania extends GenericCar {
     private double flatbedAngle;
     final double THRESHOLD = 0.01;
 
     /**
-     * creates a new Scania
+     * creates a new Cars.Scania
      */
     public Scania() {
         super(2, Color.black, 220, "Scania", 11,0,0);
@@ -15,12 +17,18 @@ public class Scania extends GenericCar{
     }
 
     /**
-     * the speed factor for a Scania
-     * @return returns the speed factor of a Scania
+     * the speed factor for a Cars.Scania
+     * @return returns the speed factor of a Cars.Scania
      */
     @Override
-    protected double speedFactor() {
+    public double speedFactor() {
         return getEnginePower() * 0.01;
+    }
+
+    @Override
+    public void startEngine() {
+        if (flatbedAngle == 0)
+            super.startEngine();
     }
 
     /**
