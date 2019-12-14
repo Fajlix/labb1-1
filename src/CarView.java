@@ -1,5 +1,8 @@
 import javax.swing.*;
 import java.awt.*;
+import java.util.ArrayList;
+
+import Cars.IGenericCar;
 
 /**
  * This class represents the full view of the MVC pattern of your car simulator.
@@ -14,8 +17,9 @@ public class CarView extends JFrame{
     private static final int Y = 800;
 
     // The controller member
-
-    DrawPanel drawPanel = new DrawPanel(X, Y-240);
+    CarModel carModel;
+    DrawPanel drawPanel;
+    ArrayList<JLabel> speedLabels = new ArrayList<>();
 
     JPanel controlPanel = new JPanel();
 
@@ -23,7 +27,6 @@ public class CarView extends JFrame{
     JSpinner gasSpinner = new JSpinner();
     int gasAmount = 0;
     JLabel gasLabel = new JLabel("Amount of gas");
-    JLabel speedLabel;
 
     JButton gasButton = new JButton("Gas");
     JButton brakeButton = new JButton("Brake");
@@ -36,7 +39,9 @@ public class CarView extends JFrame{
     JButton stopButton = new JButton("Stop all cars");
 
     // Constructor
-    public CarView(String frameName){
+    public CarView(String frameName, CarModel carModel){
+        this.carModel = carModel;
+        drawPanel = new DrawPanel(X, Y-240, carModel);
         initComponents(frameName);
     }
 
@@ -50,9 +55,6 @@ public class CarView extends JFrame{
         this.setLayout(new FlowLayout(FlowLayout.LEFT, 0, 0));
 
         this.add(drawPanel);
-
-        speedLabel = new JLabel("Speed:  " + 0);
-        this.add(speedLabel);
 
         SpinnerModel spinnerModel =
                 new SpinnerNumberModel(0, //initial value
@@ -105,5 +107,18 @@ public class CarView extends JFrame{
         this.setVisible(true);
         // Make sure the frame exits when "x" is pressed
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    }
+    public void createLabels(){
+        for (int i = 0; i < carModel.getCars().size(); i++) {
+            speedLabels.add(new JLabel());
+        }
+    }
+    public void updateLabels () {
+        int x = 0;
+        for (IGenericCar car : carModel.getCars()) {
+            speedLabels.get(x).setText(car.getModelName() + ": " + car.getCurrentSpeed());
+            this.add(speedLabels.get(x));
+            x++;
+        }
     }
 }

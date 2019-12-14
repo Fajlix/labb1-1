@@ -1,5 +1,6 @@
 import Cars.*;
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
@@ -11,109 +12,49 @@ import java.util.ArrayList;
  */
 
 public class CarController {
-
-    public static void main(String[] args) {
-        CarController cc = new CarController(new CarView("CarSim 1.0"));
-
-        cc.timer.start();
-    }
-
     private final int delay = 50;
     private Timer timer = new Timer(delay, new TimerListener());
     CarView frame;
-    ArrayList<IGenericCar> cars = new ArrayList<>();
+    CarModel carModel;
 
-    public CarController (CarView carView)
+    public CarController (CarView carView, CarModel carModel)
     {
-        cars.add(CarFactory.createSaab95(0,0));
-        cars.add(CarFactory.createScania(0,100));
-        cars.add(CarFactory.createVolvo240(0,200));
+        this.carModel = carModel;
         frame = carView;
-        CreateActionListeners();
-    }
-
-    void CreateActionListeners (){
-        frame.gasButton.addActionListener(e -> gas(frame.gasAmount));
-        frame.brakeButton.addActionListener(e -> brake(frame.gasAmount));
-
-        frame.turboOnButton.addActionListener(e -> turboOn());
-        frame.turboOffButton.addActionListener(e -> turboOff());
-
-        frame.liftBedButton.addActionListener(e -> incrementAngle());
-        frame.lowerBedButton.addActionListener(e -> decrementAngle());
-
-        frame.startButton.addActionListener(e -> startAllCars());
-        frame.stopButton.addActionListener(e -> stopAllCars());
-    }
-
-    void gas(int amount) {
-        double gas = ((double) amount) / 100;
-        for (IGenericCar car : cars) {
-            car.gas(gas);
-        }
-    }
-    void brake(int amount) {
-        double brake = (double) amount / 100;
-        for (IGenericCar car : cars) {
-            car.brake(brake);
-        }
-    }
-    void turboOn() {
-        for (IGenericCar car : cars) {
-            if (car.getClass() == Saab95.class) {
-                ((Saab95)car).setTurboOn();
-            }
-        }
-    }
-    void turboOff() {
-        for (IGenericCar car : cars) {
-            if (car.getClass() == Saab95.class)
-                ((Saab95)car).setTurboOff();
-        }
-    }
-    void incrementAngle () {
-        for (IGenericCar car : cars) {
-            if (car.getClass() == Scania.class)
-                ((Scania)car).incrementAngle();
-        }
-    }
-    void decrementAngle (){
-        for (IGenericCar car : cars) {
-            if (car.getClass() == Scania.class)
-                ((Scania)car).decrementAngle();
-        }
-    }
-    void startAllCars () {
-        for (IGenericCar car : cars)
-            car.startEngine();
-    }
-    void stopAllCars () {
-        for (IGenericCar car : cars)
-            car.stopEngine();
+        carModel.addListener(carView.drawPanel);
+        InitActionListeners();
+        timer.start();
     }
 
     private class TimerListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
-            for (IGenericCar car : cars) {
+            for (IGenericCar car : carModel.getCars()) {
                 car.move();
-                int x = (int) Math.round(car.getX());
-                int y = (int) Math.round(car.getY());
-                if (x + frame.drawPanel.getImage(car.getModelName()).getWidth() > frame.drawPanel.getWidth() &&
-                        Math.cos(car.getDirection()) > 0 ||
-                        x < 0 && Math.cos(car.getDirection()) < 0)
-                {
-                    car.stopEngine();
+                if (collides(car))
                     car.turnAround();
-                    car.startEngine();
-                }
-                frame.speedLabel.setText("Speed: " + car.getCurrentSpeed());
-                frame.drawPanel.setCars(cars);
-                frame.drawPanel.repaint();
+                carModel.update();
+                frame.updateLabels();
             }
         }
     }
-
-    public ArrayList<IGenericCar> getCars() {
-        return cars;
+    public boolean collides (IGenericCar car){
+        double x = car.getX();
+        return  (x + frame.drawPanel.getImage(car.getModelName()).getWidth() > frame.drawPanel.getWidth() &&
+                Math.cos(car.getDirection()) > 0 ||
+                x < 0 && Math.cos(car.getDirection()) < 0);
     }
+    void InitActionListeners (){
+        frame.gasButton.addActionListener(e -> carModel.gas(frame.gasAmount));
+        frame.brakeButton.addActionListener(e -> carModel.brake(frame.gasAmount));
+
+        frame.turboOnButton.addActionListener(e -> carModel.turboOn());
+        frame.turboOffButton.addActionListener(e -> carModel.turboOff());
+
+        frame.liftBedButton.addActionListener(e -> carModel.incrementAngle());
+        frame.lowerBedButton.addActionListener(e -> carModel.decrementAngle());
+
+        frame.startButton.addActionListener(e -> carModel.startAllCars());
+        frame.stopButton.addActionListener(e -> carModel.stopAllCars());
+    }
+
 }
