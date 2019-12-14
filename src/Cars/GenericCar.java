@@ -1,9 +1,6 @@
 package Cars;
 
-import javax.imageio.ImageIO;
 import java.awt.*;
-import java.awt.image.BufferedImage;
-import java.io.IOException;
 
 /**
  * GenericCar class used as a base class for cars
@@ -76,8 +73,9 @@ public abstract class GenericCar implements IGenericCar{
     }
 
     public void turnAround() {
-        if (currentSpeed == 0)
-            direction += Math.PI;
+        stopEngine();
+        direction += Math.PI;
+        startEngine();
     }
 
     public void setLoaded() {
