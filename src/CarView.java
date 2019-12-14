@@ -19,7 +19,7 @@ public class CarView extends JFrame{
     // The controller member
     CarModel carModel;
     DrawPanel drawPanel;
-    ArrayList<JLabel> speedLabels = new ArrayList<>();
+    InfoPanel infoPanel;
 
     JPanel controlPanel = new JPanel();
 
@@ -42,6 +42,7 @@ public class CarView extends JFrame{
     public CarView(String frameName, CarModel carModel){
         this.carModel = carModel;
         drawPanel = new DrawPanel(X, Y-240, carModel);
+        infoPanel = new InfoPanel(X/4,  Y-240, carModel);
         initComponents(frameName);
     }
 
@@ -49,12 +50,11 @@ public class CarView extends JFrame{
     // TODO: Take a good look and make sure you understand how these methods and components work
     private void initComponents(String title) {
 
-
         this.setTitle(title);
-        this.setPreferredSize(new Dimension(X,Y));
+        this.setPreferredSize(new Dimension(X, Y));
         this.setLayout(new FlowLayout(FlowLayout.LEFT, 0, 0));
-
         this.add(drawPanel);
+        this.add(infoPanel);
 
         SpinnerModel spinnerModel =
                 new SpinnerNumberModel(0, //initial value
@@ -62,7 +62,7 @@ public class CarView extends JFrame{
                         100, //max
                         1);//step
         gasSpinner = new JSpinner(spinnerModel);
-        gasSpinner.addChangeListener(e -> gasAmount = (int) ((JSpinner)e.getSource()).getValue());
+        gasSpinner.addChangeListener(e -> gasAmount = (int) ((JSpinner) e.getSource()).getValue());
 
         gasPanel.setLayout(new BorderLayout());
         gasPanel.add(gasLabel, BorderLayout.PAGE_START);
@@ -70,7 +70,7 @@ public class CarView extends JFrame{
 
         this.add(gasPanel);
 
-        controlPanel.setLayout(new GridLayout(2,4));
+        controlPanel.setLayout(new GridLayout(2, 4));
 
         controlPanel.add(gasButton, 0);
         controlPanel.add(turboOnButton, 1);
@@ -78,20 +78,20 @@ public class CarView extends JFrame{
         controlPanel.add(brakeButton, 3);
         controlPanel.add(turboOffButton, 4);
         controlPanel.add(lowerBedButton, 5);
-        controlPanel.setPreferredSize(new Dimension((X/2)+4, 200));
+        controlPanel.setPreferredSize(new Dimension((X / 2) + 4, 200));
         this.add(controlPanel);
         controlPanel.setBackground(Color.CYAN);
 
 
         startButton.setBackground(Color.blue);
         startButton.setForeground(Color.green);
-        startButton.setPreferredSize(new Dimension(X/5-15,200));
+        startButton.setPreferredSize(new Dimension(X / 5 - 15, 200));
         this.add(startButton);
 
 
         stopButton.setBackground(Color.red);
         stopButton.setForeground(Color.black);
-        stopButton.setPreferredSize(new Dimension(X/5-15,200));
+        stopButton.setPreferredSize(new Dimension(X / 5 - 15, 200));
         this.add(stopButton);
 
         // This actionListener is for the gas button only
@@ -102,23 +102,10 @@ public class CarView extends JFrame{
         // Get the computer screen resolution
         Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
         // Center the frame
-        this.setLocation(dim.width/2-this.getSize().width/2, dim.height/2-this.getSize().height/2);
+        this.setLocation(dim.width / 2 - this.getSize().width / 2, dim.height / 2 - this.getSize().height / 2);
         // Make the frame visible
         this.setVisible(true);
         // Make sure the frame exits when "x" is pressed
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    }
-    public void createLabels(){
-        for (int i = 0; i < carModel.getCars().size(); i++) {
-            speedLabels.add(new JLabel());
-        }
-    }
-    public void updateLabels () {
-        int x = 0;
-        for (IGenericCar car : carModel.getCars()) {
-            speedLabels.get(x).setText(car.getModelName() + ": " + car.getCurrentSpeed());
-            this.add(speedLabels.get(x));
-            x++;
-        }
     }
 }

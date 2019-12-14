@@ -33,7 +33,7 @@ public class CarController {
                 if (collides(car))
                     car.turnAround();
                 carModel.update();
-                frame.updateLabels();
+                frame.infoPanel.updateLabels();
             }
         }
     }

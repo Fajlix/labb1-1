@@ -4,8 +4,8 @@ public class Main {
     public static void main(String[] args) {
         CarModel carModel = initCars();
         CarView carView = new CarView("CarSim 1.0", carModel);
-        carView.createLabels();
         CarController cc = new CarController(carView, carModel);
+
     }
     public static CarModel initCars(){
         CarModel carModel = new CarModel();
