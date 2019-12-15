@@ -36,7 +36,7 @@ public class InfoPanel extends JPanel {
     public void updateLabels () {
         int x = 0;
         for (IGenericCar car : carModel.getCars()) {
-            speedLabels.get(x).setText(car.getModelName() + ": " + car.getCurrentSpeed());
+            speedLabels.get(x).setText(car.getModelName() + ": " + Math.round(car.getCurrentSpeed() * 100.0) / 100.0);
             this.add(speedLabels.get(x));
             x++;
         }

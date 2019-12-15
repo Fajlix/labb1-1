@@ -3,7 +3,6 @@ import Cars.IGenericCar;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
-import java.util.ArrayList;
 import javax.imageio.ImageIO;
 import javax.swing.*;
 
@@ -24,7 +23,7 @@ public class DrawPanel extends JPanel implements PaintListener{
 
     /**
      * Paints all the cars
-     * @param g
+     *
      */
     @Override
     protected void paintComponent(Graphics g) {
