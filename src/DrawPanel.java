@@ -12,15 +12,14 @@ import javax.swing.*;
 public class DrawPanel extends JPanel implements PaintListener{
     CarModel carModel;
 
-    // TODO: Make this general for all cars
-
     public DrawPanel(int x, int y, CarModel carModel) {
         this.carModel = carModel;
         this.setDoubleBuffered(true);
         this.setPreferredSize(new Dimension(x, y));
         this.setBackground(Color.green);
     }
-    // TODO: Change to suit your needs.
+
+
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
