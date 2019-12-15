@@ -4,6 +4,9 @@ import java.awt.*;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
+/**
+ * A Class that can transport other cars
+ */
 public class CarTransport extends GenericCar {
     public enum FlatbedPos {UP, DOWN}
 
@@ -18,11 +21,14 @@ public class CarTransport extends GenericCar {
      * creates a new Cars.CarTransport
      * @param maxCars max cars a carTransport can handle
      */
-
     public CarTransport(int maxCars) {
         super(2,Color.black,220,"CarTransport", 20,0,0);
         MAX_CARS = maxCars;
     }
+
+    /**
+     * Overriding the cars move method to stop the car from moving when it is on a car transport
+     */
     @Override
     public void move (){
         super.move();
@@ -31,6 +37,7 @@ public class CarTransport extends GenericCar {
             car.setY(getY());
         }
     }
+
     /**
      * the speed factor for a Cartransport
      * @return returns the speed factor for a carTransport
@@ -44,7 +51,6 @@ public class CarTransport extends GenericCar {
      * gets the current value of the carTransport's flatbedPos
      * @return a FlatbedPos value
      */
-
     public FlatbedPos getFlatbedPos() {
         return flatbedPos;
     }
@@ -52,7 +58,6 @@ public class CarTransport extends GenericCar {
     /**
      * changes the flatbedPos to UP
      */
-
     public void liftFlatbed () {
         flatbedPos = FlatbedPos.UP;
     }
@@ -60,7 +65,6 @@ public class CarTransport extends GenericCar {
     /**
      * changes the flatbedPos to DOWN
      */
-
     public void lowerFlatbed () {
         if (getCurrentSpeed() == 0)
             flatbedPos = FlatbedPos.DOWN;
@@ -70,7 +74,6 @@ public class CarTransport extends GenericCar {
      * adds a car to the Cars.CarTransport, to it's carList
      * @param car a vehicle
      */
-
     public void addCar (GenericCar car) {
         if (carsList.size() < MAX_CARS && car.getSize() < MAX_SIZE && car.getClass() != this.getClass() &&
         flatbedPos == FlatbedPos.DOWN && getDistance(car) <= MAX_DISTANCE && !car.isLoaded()) {

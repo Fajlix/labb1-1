@@ -26,7 +26,6 @@ public abstract class GenericCar implements IGenericCar{
      * @param enginePower The enginePower of a car
      * @param modelName The model name of a car
      */
-
     public GenericCar(int nrDoors, Color color, double enginePower, String modelName, int size, int x, int y) {
         this.nrDoors = nrDoors;
         this.color = color;
@@ -72,6 +71,9 @@ public abstract class GenericCar implements IGenericCar{
         direction -= Math.PI/6;
     }
 
+    /**
+     * turns the car around and resets the current speed
+     */
     public void turnAround() {
         stopEngine();
         direction += Math.PI;
@@ -81,9 +83,15 @@ public abstract class GenericCar implements IGenericCar{
     public void setLoaded() {
         isLoaded = true;
     }
+
     public void setNotLoaded(){
         isLoaded = false;
     }
+
+    /**
+     * checks if the cartrasport is loaded
+     * @return returns the boolean
+     */
     public boolean isLoaded (){
         return isLoaded;
     }
@@ -96,34 +104,18 @@ public abstract class GenericCar implements IGenericCar{
         this.y = y;
     }
 
-    /**
-     * get the number of doors on a car
-     * @return returns the number of doors on a car
-     */
     public int getNrDoors() {
         return nrDoors;
     }
 
-    /**
-     * get the engine power of a car
-     * @return returns engine power
-     */
     public double getEnginePower() {
         return enginePower;
     }
 
-    /**
-     * get the current speed of a car
-     * @return returns the current speed of a car
-     */
     public double getCurrentSpeed() {
         return currentSpeed;
     }
 
-    /**
-     * get the color of a car
-     * @return returns the color of a car
-     */
     public Color getColor() {
         return color;
     }
@@ -132,10 +124,6 @@ public abstract class GenericCar implements IGenericCar{
         return size;
     }
 
-    /**
-     * sets color of a car
-     * @param color the new color of the car
-     */
     public void setColor(Color color) {
         this.color = color;
     }
@@ -155,12 +143,10 @@ public abstract class GenericCar implements IGenericCar{
     }
 
     /**
-     * the speed factor for a object
+     * the speed factor for a object, abstract so the individual cars can make their own version of this
      * @return returns the speed factor for a car
      */
     public abstract double speedFactor();
-
-
 
     /**
      * increments the speed of a Car
@@ -180,18 +166,9 @@ public abstract class GenericCar implements IGenericCar{
             currentSpeed = Math.max(currentSpeed - speedFactor() * amount,0);
     }
 
-    /***
-     * gets current x pos for car
-     * @return returns a cars x
-     */
     public double getX() {
         return x;
     }
-
-    /***
-     * gets current y pos for car
-     * @return returns a cars y
-     */
 
     public double getY() {
         return y;
@@ -201,7 +178,6 @@ public abstract class GenericCar implements IGenericCar{
      * accelerates cars current speed
      * @param amount the amount which the car should change speed with
      */
-
     public void gas(double amount){
         if (amount >= 0 && amount <= 1) {
             incrementSpeed(amount);
@@ -212,10 +188,10 @@ public abstract class GenericCar implements IGenericCar{
      * decelerates cars current speed
      * @param amount the amount which the car should change speed with
      */
-
     public void brake(double amount){
         if (amount >= 0 && amount <= 1) {
             decrementSpeed(amount);
         }
     }
 }
+//Ändra alla "is" till "get"??

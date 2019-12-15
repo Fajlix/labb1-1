@@ -2,6 +2,10 @@ package Cars;
 
 import java.util.ArrayList;
 
+/**
+ * A garage class
+ * @param <T> Generic, makes it possible to garages with different specialities
+ */
 public class BodyShop <T extends GenericCar>{
     private final int MAX_CARS;
     private ArrayList<T> Garage = new ArrayList<>();
@@ -42,7 +46,6 @@ public class BodyShop <T extends GenericCar>{
      * gets the carList
      * @return A arrayList
      */
-
     public ArrayList<T> getGarage() {
         return Garage;
     }
