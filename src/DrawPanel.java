@@ -43,6 +43,10 @@ public class DrawPanel extends JPanel implements PaintListener{
         }
         return image;
     }
+
+    /**
+     * Repaints the panel, acts on updates
+     */
     @Override
     public void actOnUpdate() {
         repaint();

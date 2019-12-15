@@ -7,6 +7,8 @@ public class Main {
         CarController cc = new CarController(carView, carModel);
 
     }
+
+
     public static CarModel initCars(){
         CarModel carModel = new CarModel();
         carModel.addCar(CarFactory.createSaab95(0,0));
