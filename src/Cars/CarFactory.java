@@ -1,5 +1,8 @@
 package Cars;
 
+/**
+ * A class that creates the cars wanted from the start
+ */
 public class CarFactory {
     public static IGenericCar createSaab95(int x, int y){
         return new Saab95(x,y);

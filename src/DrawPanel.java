@@ -9,6 +9,9 @@ import javax.swing.*;
 
 // This panel represent the animated part of the view with the car images.
 
+/**
+ * Class for the panel that the cars move on
+ */
 public class DrawPanel extends JPanel implements PaintListener{
     CarModel carModel;
 
@@ -19,7 +22,10 @@ public class DrawPanel extends JPanel implements PaintListener{
         this.setBackground(Color.green);
     }
 
-
+    /**
+     * Paints all the cars
+     * @param g
+     */
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
