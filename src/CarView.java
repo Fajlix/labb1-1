@@ -9,9 +9,11 @@ import Cars.IGenericCar;
  * It initializes with being center on the screen and attaching it's controller in it's state.
  * It communicates with the Controller by calling methods of it when an action fires of in
  * each of it's components.
- * TODO: Write more actionListeners and wire the rest of the buttons
  **/
 
+/**
+ * Class for the application window
+ */
 public class CarView extends JFrame{
     private static final int X = 800;
     private static final int Y = 800;
@@ -46,8 +48,10 @@ public class CarView extends JFrame{
         initComponents(frameName);
     }
 
-    // Sets everything in place and fits everything
-    // TODO: Take a good look and make sure you understand how these methods and components work
+    /**
+     * Initiates all the components needed
+     * @param title Title of the program
+     */
     private void initComponents(String title) {
 
         this.setTitle(title);

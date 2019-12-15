@@ -11,6 +11,9 @@ import java.util.ArrayList;
 * modifying the model state and the updating the view.
  */
 
+/**
+ * A class for the controller of this application
+ */
 public class CarController {
     private final int delay = 50;
     private Timer timer = new Timer(delay, new TimerListener());
@@ -26,6 +29,9 @@ public class CarController {
         timer.start();
     }
 
+    /**
+     * Updates the application regularly
+     */
     private class TimerListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
             for (IGenericCar car : carModel.getCars()) {
@@ -37,12 +43,22 @@ public class CarController {
             }
         }
     }
+
+    /**
+     * Checks if the car collides with the sides of the screen window
+     * @param car parameter for the specific car
+     * @return returns true or false depending on the cars position, true of it is inside the screen and vice versa
+     */
     public boolean collides (IGenericCar car){
         double x = car.getX();
         return  (x + frame.drawPanel.getImage(car.getModelName()).getWidth() > frame.drawPanel.getWidth() &&
                 Math.cos(car.getDirection()) > 0 ||
                 x < 0 && Math.cos(car.getDirection()) < 0);
     }
+
+    /**
+     * Part of observer pattern, if a button is pressed the application will listen and update
+     */
     void InitActionListeners (){
         frame.gasButton.addActionListener(e -> carModel.gas(frame.gasAmount));
         frame.brakeButton.addActionListener(e -> carModel.brake(frame.gasAmount));

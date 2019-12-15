@@ -2,7 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="928b40dd-5562-4dca-8d9f-715ebdcd77ca" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/InfoPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/labb1-1/CarController$TimerListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/labb1-1/CarController$TimerListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/labb1-1/CarController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/labb1-1/CarController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/labb1-1/CarModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/labb1-1/CarModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/labb1-1/CarView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/labb1-1/CarView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/labb1-1/Cars/GenericCar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/labb1-1/Cars/GenericCar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/labb1-1/DrawPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/labb1-1/DrawPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/labb1-1/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/labb1-1/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/labb1-1/PaintListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/labb1-1/PaintListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CarController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CarView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CarView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,13 +110,7 @@
       <option name="presentableId" value="LOCAL−00001" />
       <updated>1576325393446</updated>
     </task>
-    <task id="LOCAL−00002" summary="update">
-      <created>1576327678940</created>
-      <option name="number" value="LOCAL−00002" />
-      <option name="presentableId" value="LOCAL−00002" />
-      <updated>1576327678940</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -150,40 +157,39 @@
     </state>
     <state x="460" y="182" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.689@0.0.1280.689" timestamp="1576087221912" />
     <state x="690" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" timestamp="1575303741725" />
-    <state x="446" y="0" key="CommitChangelistDialog2" timestamp="1576327678372">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="297" y="0" key="CommitChangelistDialog2" timestamp="1576087483132">
+      <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="297" y="0" key="CommitChangelistDialog2/0.0.1280.689@0.0.1280.689" timestamp="1576087483132" />
-    <state x="446" y="0" key="CommitChangelistDialog2/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" timestamp="1576327678372" />
     <state x="493" y="188" key="FileChooserDialogImpl" timestamp="1576229165806">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="493" y="188" key="FileChooserDialogImpl/0.0.1280.689@0.0.1280.689" timestamp="1576229165806" />
     <state x="740" y="294" key="FileChooserDialogImpl/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" timestamp="1576153699860" />
-    <state width="1877" height="294" key="GridCell.Tab.0.bottom" timestamp="1576327683601">
+    <state width="1877" height="294" key="GridCell.Tab.0.bottom" timestamp="1576327595475">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1237" height="208" key="GridCell.Tab.0.bottom/0.0.1280.689@0.0.1280.689" timestamp="1576254519354" />
     <state width="1877" height="166" key="GridCell.Tab.0.bottom/0.0.1920.1042@0.0.1920.1042" timestamp="1576241805775" />
-    <state width="1877" height="294" key="GridCell.Tab.0.bottom/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" timestamp="1576327683601" />
-    <state width="1877" height="294" key="GridCell.Tab.0.center" timestamp="1576327683601">
+    <state width="1877" height="294" key="GridCell.Tab.0.bottom/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" timestamp="1576327595475" />
+    <state width="1877" height="294" key="GridCell.Tab.0.center" timestamp="1576327595474">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1237" height="208" key="GridCell.Tab.0.center/0.0.1280.689@0.0.1280.689" timestamp="1576254519354" />
     <state width="1877" height="166" key="GridCell.Tab.0.center/0.0.1920.1042@0.0.1920.1042" timestamp="1576241805775" />
-    <state width="1877" height="294" key="GridCell.Tab.0.center/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" timestamp="1576327683601" />
-    <state width="1877" height="294" key="GridCell.Tab.0.left" timestamp="1576327683600">
+    <state width="1877" height="294" key="GridCell.Tab.0.center/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" timestamp="1576327595474" />
+    <state width="1877" height="294" key="GridCell.Tab.0.left" timestamp="1576327595474">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1237" height="208" key="GridCell.Tab.0.left/0.0.1280.689@0.0.1280.689" timestamp="1576254519354" />
     <state width="1877" height="166" key="GridCell.Tab.0.left/0.0.1920.1042@0.0.1920.1042" timestamp="1576241805775" />
-    <state width="1877" height="294" key="GridCell.Tab.0.left/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" timestamp="1576327683600" />
-    <state width="1877" height="294" key="GridCell.Tab.0.right" timestamp="1576327683601">
+    <state width="1877" height="294" key="GridCell.Tab.0.left/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" timestamp="1576327595474" />
+    <state width="1877" height="294" key="GridCell.Tab.0.right" timestamp="1576327595474">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1237" height="208" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1576254519354" />
     <state width="1877" height="166" key="GridCell.Tab.0.right/0.0.1920.1042@0.0.1920.1042" timestamp="1576241805775" />
-    <state width="1877" height="294" key="GridCell.Tab.0.right/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" timestamp="1576327683601" />
+    <state width="1877" height="294" key="GridCell.Tab.0.right/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" timestamp="1576327595474" />
     <state width="1877" height="364" key="GridCell.Tab.1.bottom" timestamp="1576327563721">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -212,10 +218,6 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="440" y="114" key="SettingsEditor/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" timestamp="1575303189825" />
-    <state x="552" y="261" key="Vcs.Push.Dialog.v2" timestamp="1576327680153">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="552" y="261" key="Vcs.Push.Dialog.v2/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" timestamp="1576327680153" />
     <state x="302" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1576242581162">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
