@@ -29,7 +29,7 @@ public class DrawPanel extends JPanel implements PaintListener{
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
         for (IGenericCar car : carModel.getCars()) {
-            g.drawImage(getImage(car.getModelName()), (int) car.getX(), (int) car.getY(), null); // see javadoc for more info on the parameters
+            g.drawImage(getImage(car.getModelName()), (int) car.getX(), (int) car.getY(), CarModel.carWith, CarModel.carHeight, null); // see javadoc for more info on the parameters
         }
     }
 
@@ -50,5 +50,4 @@ public class DrawPanel extends JPanel implements PaintListener{
     public void actOnUpdate() {
         repaint();
     }
-
 }

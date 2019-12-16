@@ -8,7 +8,11 @@ import java.util.List;
  */
 public class CarModel {
     public static final int X = 800;
-    public static final int Y = 800;
+    public static final int Y = 560;
+    public static final int carWith = 100;
+    public static final int carHeight = 60;
+
+    private static final int carOffset = 75;
 
     ArrayList<IGenericCar> cars = new ArrayList<>();
     private List<PaintListener> listeners = new ArrayList<>();
@@ -17,7 +21,23 @@ public class CarModel {
      * Method for notifying all the listeners
      */
     public void update(){
+        for (IGenericCar car : cars) {
+            car.move();
+            if (collides(car))
+                car.turnAround();
+        }
         notifyListeners();
+    }
+    /**
+     * Checks if the car collides with the sides of the screen window
+     * @param car parameter for the specific car
+     * @return returns true or false depending on the cars position, true of it is inside the screen and vice versa
+     */
+    public boolean collides (IGenericCar car){
+        double x = car.getX();
+        return  (x + carWith > X &&
+                Math.cos(car.getDirection()) > 0 ||
+                x < 0 && Math.cos(car.getDirection()) < 0);
     }
 
     /**
@@ -41,7 +61,17 @@ public class CarModel {
      * @param car parameter for the car that will be added
      */
     public void addCar (IGenericCar car){
-        cars.add(car);
+        if (cars.size() < 10)
+            cars.add(car);
+    }
+    public void removeCar (){
+        if (!cars.isEmpty())
+            cars.remove(cars.size()-1);
+    }
+    public int getNextY(){
+        if (cars.size()> 0)
+            return (int)cars.get(cars.size() -1).getY() + carOffset;
+        return 0;
     }
 
     /**

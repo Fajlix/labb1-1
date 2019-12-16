@@ -15,8 +15,6 @@ import java.util.ArrayList;
  * A class for the controller of this application
  */
 public class CarController {
-    private final int delay = 50;
-    private Timer timer = new Timer(delay, new TimerListener());
     CarView frame;
     CarModel carModel;
 
@@ -24,8 +22,9 @@ public class CarController {
     {
         this.carModel = carModel;
         frame = carView;
-        carModel.addListener(carView.drawPanel);
         InitActionListeners();
+        int delay = 50;
+        Timer timer = new Timer(delay, new TimerListener());
         timer.start();
     }
 
@@ -34,26 +33,8 @@ public class CarController {
      */
     private class TimerListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
-            for (IGenericCar car : carModel.getCars()) {
-                car.move();
-                if (collides(car))
-                    car.turnAround();
-                carModel.update();
-                frame.infoPanel.updateLabels();
-            }
+            carModel.update();
         }
-    }
-
-    /**
-     * Checks if the car collides with the sides of the screen window
-     * @param car parameter for the specific car
-     * @return returns true or false depending on the cars position, true of it is inside the screen and vice versa
-     */
-    public boolean collides (IGenericCar car){
-        double x = car.getX();
-        return  (x + frame.drawPanel.getImage(car.getModelName()).getWidth() > frame.drawPanel.getWidth() &&
-                Math.cos(car.getDirection()) > 0 ||
-                x < 0 && Math.cos(car.getDirection()) < 0);
     }
 
     /**
@@ -71,6 +52,9 @@ public class CarController {
 
         frame.startButton.addActionListener(e -> carModel.startAllCars());
         frame.stopButton.addActionListener(e -> carModel.stopAllCars());
+
+        frame.addCarButton.addActionListener(e -> carModel.addCar(CarFactory.createRandomCar(0,carModel.getNextY())));
+        frame.removeCarButton.addActionListener(e -> carModel.removeCar());
     }
 
 }
