@@ -12,10 +12,10 @@ import javax.swing.*;
  * Class for the panel that the cars move on
  */
 public class DrawPanel extends JPanel implements PaintListener{
-    CarModel carModel;
+    CarView view;
 
-    public DrawPanel(int x, int y, CarModel carModel) {
-        this.carModel = carModel;
+    public DrawPanel(int x, int y, CarView view) {
+        this.view = view;
         this.setDoubleBuffered(true);
         this.setPreferredSize(new Dimension(x, y));
         this.setBackground(Color.green);
@@ -28,8 +28,9 @@ public class DrawPanel extends JPanel implements PaintListener{
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
-        for (IGenericCar car : carModel.getCars()) {
-            g.drawImage(getImage(car.getModelName()), (int) car.getX(), (int) car.getY(), CarModel.carWith, CarModel.carHeight, null); // see javadoc for more info on the parameters
+        for (IGenericCar car : view.carModel.getCars()) {
+            g.drawImage(getImage(car.getModelName()), (int) car.getX(), (int) car.getY(),
+                    CarModel.carWith, CarModel.carHeight, null); // see javadoc for more info on the parameters
         }
     }
 

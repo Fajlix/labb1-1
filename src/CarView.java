@@ -29,7 +29,7 @@ public class CarView extends JFrame{
     JButton brakeButton = new JButton("Brake");
     JButton turboOnButton = new JButton("Saab Turbo on");
     JButton turboOffButton = new JButton("Saab Turbo off");
-    JButton liftBedButton = new JButton("Cars.Scania Lift Bed");
+    JButton liftBedButton = new JButton("Scania Lift Bed");
     JButton lowerBedButton = new JButton("Lower Lift Bed");
     JButton addCarButton = new JButton("Add Car");
     JButton removeCarButton = new JButton("Remove car");
@@ -40,8 +40,8 @@ public class CarView extends JFrame{
     // Constructor
     public CarView(String frameName, CarModel carModel){
         this.carModel = carModel;
-        drawPanel = new DrawPanel(CarModel.X, CarModel.Y, carModel);
-        infoPanel = new InfoPanel(CarModel.X,  CarModel.Y/15, carModel);
+        drawPanel = new DrawPanel(CarModel.X, CarModel.Y, this);
+        infoPanel = new InfoPanel(CarModel.X,  CarModel.Y/15, this);
         initComponents(frameName);
     }
 

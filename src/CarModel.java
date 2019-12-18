@@ -12,7 +12,7 @@ public class CarModel {
     public static final int carWith = 100;
     public static final int carHeight = 60;
 
-    private static final int carOffset = 75;
+    private static final int carOffset = 15;
 
     ArrayList<IGenericCar> cars = new ArrayList<>();
     private List<PaintListener> listeners = new ArrayList<>();
@@ -69,8 +69,8 @@ public class CarModel {
             cars.remove(cars.size()-1);
     }
     public int getNextY(){
-        if (cars.size()> 0)
-            return (int)cars.get(cars.size() -1).getY() + carOffset;
+        if (cars.size() > 0)
+            return (int)cars.get(cars.size() -1).getY() + carHeight + carOffset;
         return 0;
     }
 

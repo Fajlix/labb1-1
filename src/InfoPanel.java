@@ -8,11 +8,11 @@ import java.util.ArrayList;
  * A class part of the view that controls the speed labels
  */
 public class InfoPanel extends JPanel implements PaintListener{
-    CarModel carModel;
-    ArrayList<JLabel> speedLabels = new ArrayList<>();
+    CarView view;
+    private ArrayList<JLabel> speedLabels = new ArrayList<>();
 
-    public InfoPanel(int x, int y, CarModel carModel) {
-        this.carModel = carModel;
+    public InfoPanel(int x, int y, CarView view) {
+        this.view = view;
         this.setDoubleBuffered(true);
         this.setPreferredSize(new Dimension(x, y));
         this.setBackground(Color.white);
@@ -24,7 +24,8 @@ public class InfoPanel extends JPanel implements PaintListener{
      */
     private void createLabels(){
         removeAll();
-        for (IGenericCar car : carModel.getCars()) {
+        speedLabels = new ArrayList<>();
+        for (IGenericCar car : view.carModel.getCars()) {
             speedLabels.add(new JLabel());
         }
         updateLabels();
@@ -34,11 +35,11 @@ public class InfoPanel extends JPanel implements PaintListener{
      * Updates the labels regularly
      */
     public void updateLabels () {
-        if (speedLabels.size() != carModel.getCars().size())
+        if (speedLabels.size() != view.carModel.getCars().size())
             createLabels();
         else {
             int x = 0;
-            for (IGenericCar car : carModel.getCars()) {
+            for (IGenericCar car : view.carModel.getCars()) {
                 speedLabels.get(x).setText(car.getModelName() + ": " + Math.round(car.getCurrentSpeed() * 100.0) / 100.0);
                 this.add(speedLabels.get(x));
                 x++;
