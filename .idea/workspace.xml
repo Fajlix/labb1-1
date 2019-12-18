@@ -2,29 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="928b40dd-5562-4dca-8d9f-715ebdcd77ca" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/labb1-1/CarController$TimerListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/labb1-1/CarController$TimerListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/labb1-1/CarController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/labb1-1/CarController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/labb1-1/CarModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/labb1-1/CarModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/labb1-1/CarView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/labb1-1/CarView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/labb1-1/Cars/BodyShop.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/labb1-1/Cars/BodyShop.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/labb1-1/Cars/CarFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/labb1-1/Cars/CarFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/labb1-1/Cars/CarTransport$FlatbedPos.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/labb1-1/Cars/CarTransport$FlatbedPos.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/labb1-1/Cars/CarTransport.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/labb1-1/Cars/CarTransport.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/labb1-1/Cars/GenericCar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/labb1-1/Cars/GenericCar.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/labb1-1/Cars/IGenericCar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/labb1-1/Cars/IGenericCar.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/labb1-1/Cars/Saab95.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/labb1-1/Cars/Saab95.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/labb1-1/Cars/Scania.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/labb1-1/Cars/Scania.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/labb1-1/Cars/Volvo240.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/labb1-1/Cars/Volvo240.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/labb1-1/DrawPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/labb1-1/DrawPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/labb1-1/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/labb1-1/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/labb1-1/PaintListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/labb1-1/PaintListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/labb1-1/Cars/ScaniaTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/labb1-1/Cars/ScaniaTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CarModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CarModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CarView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CarView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DrawPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DrawPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/InfoPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/InfoPanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +38,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
@@ -153,7 +133,14 @@
       <option name="presentableId" value="LOCAL−00006" />
       <updated>1576507105749</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="update">
+      <created>1576692706772</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1576692706773</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -200,10 +187,10 @@
     </state>
     <state x="460" y="182" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.689@0.0.1280.689" timestamp="1576087221912" />
     <state x="690" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" timestamp="1575303741725" />
-    <state x="-1474" y="0" key="CommitChangelistDialog2" timestamp="1576507105197">
-      <screen x="-1920" y="0" width="1920" height="1040" />
+    <state x="297" y="0" key="CommitChangelistDialog2" timestamp="1576692705364">
+      <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="297" y="0" key="CommitChangelistDialog2/0.0.1280.689@0.0.1280.689" timestamp="1576087483132" />
+    <state x="297" y="0" key="CommitChangelistDialog2/0.0.1280.689@0.0.1280.689" timestamp="1576692705364" />
     <state x="-1474" y="0" key="CommitChangelistDialog2/0.0.1920.1080/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1576507105197" />
     <state x="446" y="0" key="CommitChangelistDialog2/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" timestamp="1576410067438" />
     <state x="446" y="0" key="CommitChangelistDialog2/1920.-345.3440.1400/0.0.1920.1040@0.0.1920.1040" timestamp="1576409439179" />
@@ -276,9 +263,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="440" y="114" key="SettingsEditor/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" timestamp="1575303189825" />
-    <state x="-1368" y="241" key="Vcs.Push.Dialog.v2" timestamp="1576507109046">
-      <screen x="-1920" y="0" width="1920" height="1040" />
+    <state x="368" y="132" key="Vcs.Push.Dialog.v2" timestamp="1576692709074">
+      <screen x="0" y="0" width="1280" height="689" />
     </state>
+    <state x="368" y="132" key="Vcs.Push.Dialog.v2/0.0.1280.689@0.0.1280.689" timestamp="1576692709074" />
     <state x="-1368" y="241" key="Vcs.Push.Dialog.v2/0.0.1920.1080/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1576507109046" />
     <state x="552" y="241" key="Vcs.Push.Dialog.v2/1920.-345.3440.1400/0.0.1920.1040@0.0.1920.1040" timestamp="1576409441402" />
     <state x="302" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1576242581162">
