@@ -22,7 +22,7 @@ public class InfoPanel extends JPanel implements PaintListener{
     /**
      * Creates all the necessary labels
      */
-    public void createLabels(){
+    private void createLabels(){
         removeAll();
         for (IGenericCar car : carModel.getCars()) {
             speedLabels.add(new JLabel());
@@ -34,7 +34,7 @@ public class InfoPanel extends JPanel implements PaintListener{
      * Updates the labels regularly
      */
     public void updateLabels () {
-        if (speedLabels.size() < carModel.getCars().size())
+        if (speedLabels.size() != carModel.getCars().size())
             createLabels();
         else {
             int x = 0;
